@@ -1,0 +1,451 @@
+import { useEffect, useMemo, useState } from "react";
+
+const apps = [
+  {
+    name: "Deb8",
+    category: "AI workspace",
+    description:
+      "A debate studio for testing arguments, comparing positions, and preserving the thread of a hard conversation.",
+    href: "https://gen-lang-client-0682789775.web.app",
+    route: "/apps/deb8",
+    stack: ["React", "Vite", "Firebase", "Gemini"],
+    status: "Live",
+    mode: "Backend",
+    accent: "deb8",
+  },
+  {
+    name: "DC Map Layers",
+    category: "Civic mapping",
+    description:
+      "Layered Washington, DC neighborhood analysis with public datasets, map overlays, and spatial filters.",
+    href: "https://bookmarker-9ac68.web.app",
+    route: "/apps/dc-map-layers",
+    stack: ["React", "Vite", "Firebase Hosting"],
+    status: "Live",
+    mode: "Static",
+    accent: "maps",
+  },
+  {
+    name: "DC Mayoral Primary 2026",
+    category: "Civic guide",
+    description:
+      "A public-facing election guide for exploring candidates, issue positions, and race context.",
+    href: "https://dc-mayoral-primary-2026.web.app",
+    route: "/apps/dc-mayoral-primary-2026",
+    stack: ["React", "Vite"],
+    status: "Live",
+    mode: "Static",
+    accent: "primary",
+  },
+  {
+    name: "Rent vs. Buy",
+    category: "Financial planning",
+    description:
+      "A scenario calculator for comparing rent, home ownership, equity, cash flow, and long-term tradeoffs.",
+    href: "/apps/rent-vs-buy/index.html?mode=rent-buy",
+    route: "/apps/rent-vs-buy",
+    stack: ["React", "Vite"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "rentbuy",
+  },
+  {
+    name: "World Timeline Explorer",
+    category: "History tools",
+    description:
+      "A timeline workspace for browsing historical events, grouped eras, and chronological patterns.",
+    href: "/apps/world-timeline/index.html",
+    route: "/apps/world-timeline",
+    stack: ["React", "Vite", "Firebase"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "timeline",
+  },
+  {
+    name: "Slime Trails",
+    category: "Simulation",
+    description:
+      "A browser simulation for emergent movement, trail systems, and organic-looking interaction patterns.",
+    href: "/apps/slime-trails/index.html",
+    route: "/apps/slime-trails",
+    stack: ["React", "Vite"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "slime",
+  },
+  {
+    name: "Pathway AI",
+    category: "Urban simulation",
+    description:
+      "A park-planning simulator for drawing entrances, paths, obstacles, and watching human desire paths emerge.",
+    href: "/apps/pathway-ai/index.html",
+    route: "/apps/pathway-ai",
+    stack: ["React", "Vite", "TypeScript"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "pathway",
+  },
+  {
+    name: "Color Relationship Explorer",
+    category: "Design tool",
+    description:
+      "An interactive color theory app for choosing a base color and exploring complementary, triadic, tonal, and neutral palettes.",
+    href: "/apps/color-relationship-explorer/index.html",
+    route: "/apps/color-relationship-explorer",
+    stack: ["React", "Vite", "Design Systems"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "color",
+  },
+  {
+    name: "Political Spectrum 3D",
+    category: "3D visualization",
+    description:
+      "An interactive three-dimensional model for exploring ideological positions and political distance.",
+    href: "/apps/political-spectrum-3d/index.html",
+    route: "/apps/political-spectrum-3d",
+    stack: ["React", "Vite", "Three.js"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "spectrum",
+  },
+  {
+    name: "Perfect Pitch",
+    category: "Ear training",
+    description:
+      "A focused ear-training app for note recognition practice with piano samples and quick feedback.",
+    href: "/apps/perfect-pitch/index.html",
+    route: "/apps/perfect-pitch",
+    stack: ["React", "Vite", "TypeScript"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "pitch",
+  },
+];
+
+const filters = ["All", ...Array.from(new Set(apps.flatMap((app) => app.stack)))];
+
+function AppPreview({ accent }) {
+  const previewContent = {
+    deb8: (
+      <>
+        <span className="deb8-prompt" />
+        <span className="deb8-card deb8-left">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="deb8-card deb8-right">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="deb8-meter" />
+      </>
+    ),
+    maps: (
+      <>
+        <span className="dc-river" />
+        <span className="dc-park" />
+        <span className="dc-zone dc-zone-a" />
+        <span className="dc-zone dc-zone-b" />
+        <span className="dc-route" />
+        <span className="dc-pin" />
+        <span className="dc-layer-list">
+          <i />
+          <i />
+          <i />
+        </span>
+      </>
+    ),
+    primary: (
+      <>
+        <span className="ballot-card ballot-card-a">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="ballot-card ballot-card-b">
+          <i />
+          <i />
+        </span>
+        <span className="vote-check" />
+        <span className="poll-bars">
+          <i />
+          <i />
+          <i />
+        </span>
+      </>
+    ),
+    rentbuy: (
+      <>
+        <span className="house rent-house">
+          <i />
+        </span>
+        <span className="house buy-house">
+          <i />
+        </span>
+        <span className="finance-panel">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="equity-line" />
+      </>
+    ),
+    timeline: (
+      <>
+        <span className="timeline-axis" />
+        <span className="timeline-year year-a">1200</span>
+        <span className="timeline-year year-b">1600</span>
+        <span className="timeline-year year-c">2000</span>
+        <span className="timeline-event event-a">Rome</span>
+        <span className="timeline-event event-b">Print</span>
+        <span className="timeline-event event-c">Moon</span>
+        <span className="timeline-track track-a" />
+        <span className="timeline-track track-b" />
+      </>
+    ),
+    slime: (
+      <>
+        <span className="trail trail-a" />
+        <span className="trail trail-b" />
+        <span className="trail trail-c" />
+        <span className="particle particle-a" />
+        <span className="particle particle-b" />
+        <span className="particle particle-c" />
+        <span className="particle particle-d" />
+        <span className="sim-panel">
+          <i />
+          <i />
+        </span>
+      </>
+    ),
+    pathway: (
+      <>
+        <span className="park-grass" />
+        <span className="park-path paved-path-a" />
+        <span className="park-path paved-path-b" />
+        <span className="desire-path desire-path-a" />
+        <span className="desire-path desire-path-b" />
+        <span className="park-gate gate-a" />
+        <span className="park-gate gate-b" />
+        <span className="park-gate gate-c" />
+        <span className="park-obstacle obstacle-a" />
+        <span className="park-obstacle obstacle-b" />
+      </>
+    ),
+    color: (
+      <>
+        <span className="color-wheel-preview" />
+        <span className="color-wheel-dot" />
+        <span className="color-card color-card-a" />
+        <span className="color-card color-card-b" />
+        <span className="color-card color-card-c" />
+        <span className="color-label-strip" />
+      </>
+    ),
+    spectrum: (
+      <>
+        <span className="spectrum-floor" />
+        <span className="spectrum-axis x-axis" />
+        <span className="spectrum-axis y-axis" />
+        <span className="spectrum-axis z-axis" />
+        <span className="spectrum-point point-a" />
+        <span className="spectrum-point point-b" />
+        <span className="spectrum-point point-c" />
+        <span className="spectrum-card" />
+      </>
+    ),
+    pitch: (
+      <>
+        <span className="speaker-core" />
+        <span className="sound-wave wave-a" />
+        <span className="sound-wave wave-b" />
+        <span className="piano-key key-c">C</span>
+        <span className="piano-key key-d">D</span>
+        <span className="piano-key key-e">E</span>
+        <span className="piano-key key-f">F</span>
+        <span className="black-key black-a" />
+        <span className="black-key black-b" />
+      </>
+    ),
+  }[accent];
+
+  return (
+    <div className={`app-preview ${accent}`} aria-hidden="true">
+      <span className="preview-grid" />
+      {previewContent}
+    </div>
+  );
+}
+
+function PythonDecorations() {
+  return (
+    <div className="python-decorations" aria-hidden="true">
+      <span className="paper-sun paper-float">
+        <i />
+      </span>
+      <span className="pointing-hand paper-slide">
+        <i />
+      </span>
+      <span className="paper-crown paper-wiggle">
+        <i />
+        <i />
+        <i />
+      </span>
+      <span className="tiny-knight paper-shudder">
+        <i className="helm" />
+        <i className="body" />
+        <i className="leg leg-a" />
+        <i className="leg leg-b" />
+        <i className="sword" />
+      </span>
+      <span className="castle-scrap" />
+      <span className="marginalia marginalia-left" />
+      <span className="marginalia marginalia-right" />
+    </div>
+  );
+}
+
+function AppCard({ app, isPython }) {
+  const canLaunch = Boolean(app.href);
+
+  return (
+    <article className={`app-card ${app.accent}`}>
+      <span className="card-pin" aria-hidden="true" />
+      <span className="card-creature" aria-hidden="true" />
+      <AppPreview accent={app.accent} />
+      <div className="app-content">
+        <div className="app-meta">
+          <span>{app.category}</span>
+          <strong>{app.status}</strong>
+        </div>
+        <h2>{app.name}</h2>
+        <p>{app.description}</p>
+        <div className="stack-list" aria-label={`${app.name} stack`}>
+          {isPython && <b>Tools of the Trade</b>}
+          {app.stack.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+      </div>
+      <div className="card-footer">
+        <span>{app.route}</span>
+        {canLaunch ? (
+          <a className="launch-link" href={app.href}>
+            {isPython ? "View Quest" : "Open"}
+          </a>
+        ) : (
+          <button className="launch-link muted" type="button" disabled>
+            {isPython ? "Unwritten" : "Queue"}
+          </button>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function App() {
+  const [activeFilter, setActiveFilter] = useState("All");
+  const [theme, setTheme] = useState(() => {
+    if (typeof window === "undefined") {
+      return "default";
+    }
+
+    return window.localStorage.getItem("portfolio-theme") || "default";
+  });
+
+  const isPython = theme === "python";
+
+  const visibleApps = useMemo(() => {
+    if (activeFilter === "All") {
+      return apps;
+    }
+
+    return apps.filter((app) => app.stack.includes(activeFilter));
+  }, [activeFilter]);
+
+  useEffect(() => {
+    document.body.classList.toggle("theme-python", isPython);
+    window.localStorage.setItem("portfolio-theme", theme);
+
+    return () => {
+      document.body.classList.remove("theme-python");
+    };
+  }, [isPython, theme]);
+
+  return (
+    <main className={`shell ${isPython ? "theme-python" : "theme-default"}`}>
+      {isPython && <PythonDecorations />}
+      <button
+        className="corner-mark"
+        type="button"
+        aria-pressed={isPython}
+        aria-label={isPython ? "Return to default mode" : "Enter Python Mode"}
+        title={isPython ? "Return to default mode" : "Enter Python Mode"}
+        onClick={() => setTheme(isPython ? "default" : "python")}
+      >
+        <img
+          src="/round_rabbit_icon_centered.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+      <span className="mode-label" aria-hidden="true">
+        {isPython ? "Python Mode" : "Click for Python Mode"}
+      </span>
+      <span className="stage-curtains is-active" aria-hidden="true">
+        <span className="curtain-panel curtain-left" />
+        <span className="curtain-panel curtain-right" />
+        <span className="curtain-valance" />
+      </span>
+      <section className="hero" aria-labelledby="page-title">
+        <span className="hero-flourish hero-flourish-left" aria-hidden="true" />
+        <span className="hero-flourish hero-flourish-right" aria-hidden="true" />
+        <span className="scroll-strip paper-pop" aria-hidden="true" />
+        <div className="hero-copy">
+          <p className="eyebrow">Derrick Fox presents</p>
+          <h1 id="page-title">The Profolio</h1>
+          <p>
+            A single public front door for the apps, experiments, dashboards,
+            simulations, and civic tools built across this workspace.
+          </p>
+        </div>
+      </section>
+
+      <section className="toolbar" aria-label="Application filters">
+        <div>
+          <span>{isPython ? "Archives" : "Catalog"}</span>
+          <strong>
+            {visibleApps.length} {isPython ? "quests" : "shown"}
+          </strong>
+        </div>
+        <div className="filter-list">
+          {filters.map((filter) => (
+            <button
+              className={filter === activeFilter ? "active" : ""}
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              type="button"
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="app-grid" aria-label="Applications">
+        {visibleApps.map((app) => (
+          <AppCard app={app} isPython={isPython} key={app.name} />
+        ))}
+      </section>
+
+      {visibleApps.length === 0 && (
+        <p className="empty-archive">No such quest is recorded in the archives.</p>
+      )}
+    </main>
+  );
+}
+
+export default App;

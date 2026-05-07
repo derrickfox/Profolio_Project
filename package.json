@@ -1,0 +1,27 @@
+{
+  "name": "profolio-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:apps:rent-vs-buy": "cd ../RentVsBuy && npx vite build --base=/apps/rent-vs-buy/ --outDir=../Profolio_Project/public/apps/rent-vs-buy --emptyOutDir",
+    "build:apps:world-timeline": "cd ../chronos_-world-timeline-explorer && npx vite build --base=/apps/world-timeline/ --outDir=../Profolio_Project/public/apps/world-timeline --emptyOutDir",
+    "build:apps:slime-trails": "cd ../slime-trails_-bio-simulation && npx vite build --base=/apps/slime-trails/ --outDir=../Profolio_Project/public/apps/slime-trails --emptyOutDir",
+    "build:apps:pathway-ai": "cd ../Pathway-AI && npx vite build --base=/apps/pathway-ai/ --outDir=../Profolio_Project/public/apps/pathway-ai --emptyOutDir",
+    "build:apps:color-relationship-explorer": "cd ../Palette_Spectrum && npx vite build --base=/apps/color-relationship-explorer/ --outDir=../Profolio_Project/public/apps/color-relationship-explorer --emptyOutDir",
+    "build:apps:political-spectrum-3d": "cd ../political-spectrum-3d && npx vite build --base=/apps/political-spectrum-3d/ --outDir=../Profolio_Project/public/apps/political-spectrum-3d --emptyOutDir",
+    "build:apps:perfect-pitch": "cd ../PerfectPitch-React && npx vite build --base=/apps/perfect-pitch/ --outDir=../Profolio_Project/public/apps/perfect-pitch --emptyOutDir",
+    "build:apps": "npm run build:apps:rent-vs-buy && npm run build:apps:world-timeline && npm run build:apps:slime-trails && npm run build:apps:pathway-ai && npm run build:apps:color-relationship-explorer && npm run build:apps:political-spectrum-3d && npm run build:apps:perfect-pitch",
+    "build": "vite build",
+    "build:all": "npm run build:apps && npm run build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^5.4.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {}
+}
