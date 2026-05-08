@@ -291,6 +291,123 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7e8 0%, #e9eee8 100%);
 }
 
+.app-preview.natural {
+  background: linear-gradient(135deg, #f7f4ec 0%, #e9f2ed 100%);
+}
+
+.natural-grid {
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgb(23 34 42 / 6%) 1px, transparent 1px),
+    linear-gradient(0deg, rgb(23 34 42 / 6%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.natural-obstacle {
+  border-radius: 50%;
+  background: #d7d0c2;
+  border: 2px solid #a8a093;
+  box-shadow: inset 10px 10px 0 rgb(255 255 255 / 22%);
+}
+
+.natural-obstacle.obstacle-one {
+  left: 11%;
+  top: 28%;
+  width: 62px;
+  height: 62px;
+}
+
+.natural-obstacle.obstacle-two {
+  right: 13%;
+  top: 16%;
+  width: 84px;
+  height: 84px;
+}
+
+.natural-food {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #48a868;
+}
+
+.natural-food.food-one {
+  left: 22%;
+  top: 22%;
+}
+
+.natural-food.food-two {
+  right: 28%;
+  bottom: 24%;
+}
+
+.natural-food.food-three {
+  left: 46%;
+  bottom: 18%;
+}
+
+.natural-blob {
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2px rgb(23 34 42 / 12%),
+    0 -8px 0 -5px #f6d56f,
+    6px -8px 0 -5px #f6d56f;
+}
+
+.natural-blob.blob-slow {
+  left: 20%;
+  bottom: 22%;
+  width: 22px;
+  height: 22px;
+  background: rgb(37 99 235);
+}
+
+.natural-blob.blob-mid {
+  left: 48%;
+  top: 35%;
+  width: 30px;
+  height: 30px;
+  background: rgb(128 68 137);
+}
+
+.natural-blob.blob-fast {
+  right: 19%;
+  bottom: 30%;
+  width: 25px;
+  height: 25px;
+  background: rgb(220 38 38);
+}
+
+.natural-chart {
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  height: 42px;
+  border-radius: 8px;
+  background: rgb(255 255 255 / 76%);
+  box-shadow: 0 12px 24px rgb(23 34 42 / 10%);
+}
+
+.natural-chart i:first-child {
+  left: 13px;
+  right: 13px;
+  bottom: 12px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--steel) 0 20%, transparent 20% 100%);
+}
+
+.natural-chart i:last-child {
+  left: 13px;
+  top: 12px;
+  width: 68%;
+  height: 16px;
+  border: solid var(--steel);
+  border-width: 3px 0 0;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-5deg);
+}
+
 .deb8-prompt {
   left: 18%;
   right: 18%;

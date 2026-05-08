@@ -133,6 +133,18 @@ const apps = [
     mode: "Static",
     accent: "cookie",
   },
+  {
+    name: "Natural Selection Lab",
+    category: "Evolution simulation",
+    description:
+      "A Primer-inspired ecosystem where blobs inherit speed and size, navigate obstacles, compete for food, and evolve across generations.",
+    href: "/apps/natural-selection/index.html",
+    route: "/apps/natural-selection",
+    stack: ["React", "Vite", "Canvas", "Recharts"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "natural",
+  },
 ];
 
 const filters = ["All", ...Array.from(new Set(apps.flatMap((app) => app.stack)))];
@@ -296,6 +308,23 @@ function AppPreview({ accent }) {
         <span className="cookie-crack crack-b" />
         <span className="cookie-controls">
           <i />
+          <i />
+          <i />
+        </span>
+      </>
+    ),
+    natural: (
+      <>
+        <span className="natural-grid" />
+        <span className="natural-obstacle obstacle-one" />
+        <span className="natural-obstacle obstacle-two" />
+        <span className="natural-food food-one" />
+        <span className="natural-food food-two" />
+        <span className="natural-food food-three" />
+        <span className="natural-blob blob-slow" />
+        <span className="natural-blob blob-mid" />
+        <span className="natural-blob blob-fast" />
+        <span className="natural-chart">
           <i />
           <i />
         </span>
