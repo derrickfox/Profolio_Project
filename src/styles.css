@@ -295,6 +295,127 @@ a:focus-visible {
   background: linear-gradient(135deg, #f7f4ec 0%, #e9f2ed 100%);
 }
 
+.app-preview.classroom {
+  background: linear-gradient(135deg, #f7efe4 0%, #e5f2f0 100%);
+}
+
+.classroom-front {
+  left: 16%;
+  right: 16%;
+  top: 14px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--green);
+  opacity: 0.8;
+}
+
+.classroom-teacher {
+  left: 35%;
+  top: 34px;
+  width: 30%;
+  height: 22px;
+  border-radius: 8px;
+  background: #cce5dd;
+  border: 1px solid rgb(23 34 42 / 12%);
+  box-shadow: 0 8px 16px rgb(23 34 42 / 10%);
+}
+
+.classroom-desk {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: #f9fbfa;
+  border: 2px solid #cfdbd7;
+  box-shadow: 0 10px 16px rgb(23 34 42 / 10%);
+}
+
+.classroom-desk.support {
+  background: #ffe1d9;
+  border-color: #d96f5d;
+}
+
+.classroom-desk.peer {
+  background: #e3eeff;
+  border-color: #4d7fc4;
+}
+
+.classroom-desk::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 16px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgb(23 34 42 / 18%);
+}
+
+.desk-one {
+  left: 17%;
+  top: 70px;
+}
+
+.desk-two {
+  left: 38%;
+  top: 70px;
+}
+
+.desk-three {
+  left: 59%;
+  top: 70px;
+}
+
+.desk-four {
+  left: 17%;
+  top: 118px;
+}
+
+.desk-five {
+  left: 38%;
+  top: 118px;
+}
+
+.desk-six {
+  left: 59%;
+  top: 118px;
+}
+
+.classroom-score {
+  right: 12px;
+  bottom: 12px;
+  width: 82px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgb(255 255 255 / 84%);
+  box-shadow: 0 12px 22px rgb(23 34 42 / 12%);
+}
+
+.classroom-score i {
+  left: 12px;
+  right: 12px;
+  height: 6px;
+  border-radius: 999px;
+  background: #cfd8df;
+}
+
+.classroom-score i:nth-child(1) {
+  top: 11px;
+  width: 58%;
+  background: var(--green);
+}
+
+.classroom-score i:nth-child(2) {
+  top: 22px;
+  width: 72%;
+  background: var(--blue);
+}
+
+.classroom-score i:nth-child(3) {
+  top: 33px;
+  width: 45%;
+  background: var(--coral);
+}
+
 .natural-grid {
   inset: 0;
   background:

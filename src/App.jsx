@@ -145,6 +145,18 @@ const apps = [
     mode: "Static",
     accent: "natural",
   },
+  {
+    name: "Classroom Seating Simulator",
+    category: "Education planning",
+    description:
+      "A teacher-supportive seating planner that balances distraction reduction, inclusion, accessibility, peer supports, and professional judgment.",
+    href: "/apps/classroom-seating-simulator/index.html",
+    route: "/apps/classroom-seating-simulator",
+    stack: ["React", "Vite", "Simulation"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "classroom",
+  },
 ];
 
 const filters = ["All", ...Array.from(new Set(apps.flatMap((app) => app.stack)))];
@@ -325,6 +337,23 @@ function AppPreview({ accent }) {
         <span className="natural-blob blob-mid" />
         <span className="natural-blob blob-fast" />
         <span className="natural-chart">
+          <i />
+          <i />
+        </span>
+      </>
+    ),
+    classroom: (
+      <>
+        <span className="classroom-front" />
+        <span className="classroom-teacher" />
+        <span className="classroom-desk desk-one" />
+        <span className="classroom-desk desk-two support" />
+        <span className="classroom-desk desk-three peer" />
+        <span className="classroom-desk desk-four" />
+        <span className="classroom-desk desk-five support" />
+        <span className="classroom-desk desk-six peer" />
+        <span className="classroom-score">
+          <i />
           <i />
           <i />
         </span>

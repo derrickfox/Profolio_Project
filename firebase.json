@@ -42,6 +42,14 @@
           "destination": "/dc-mayoral-primary-2026/index.html"
         },
         {
+          "source": "/apps/classroom-seating-simulator",
+          "destination": "/apps/classroom-seating-simulator/index.html"
+        },
+        {
+          "source": "/apps/classroom-seating-simulator/**",
+          "destination": "/apps/classroom-seating-simulator/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -87,6 +95,14 @@
         {
           "source": "/dc-mayoral-primary-2026/**",
           "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "/apps/classroom-seating-simulator",
+          "destination": "/apps/classroom-seating-simulator/index.html"
+        },
+        {
+          "source": "/apps/classroom-seating-simulator/**",
+          "destination": "/apps/classroom-seating-simulator/index.html"
         },
         {
           "source": "**",
