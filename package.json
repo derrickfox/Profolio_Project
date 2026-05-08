@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build:apps:deb8": "cd ../Deb8 && npx vite build --base=/deb8/ --outDir=../Profolio_Project/public/deb8 --emptyOutDir",
+    "build:apps:dc-map-layers": "cd ../DC_Map_Filters && ./node_modules/.bin/vite build --base=/dc_map_layers/ --outDir=../Profolio_Project/public/dc_map_layers --emptyOutDir",
+    "build:apps:dc-mayoral-primary-2026": "cd ../DC_Mayoral_Primary_26 && npx vite build --base=/dc-mayoral-primary-2026/ --outDir=../Profolio_Project/public/dc-mayoral-primary-2026 --emptyOutDir",
     "build:apps:rent-vs-buy": "cd ../RentVsBuy && npx vite build --base=/apps/rent-vs-buy/ --outDir=../Profolio_Project/public/apps/rent-vs-buy --emptyOutDir",
     "build:apps:world-timeline": "cd ../chronos_-world-timeline-explorer && npx vite build --base=/apps/world-timeline/ --outDir=../Profolio_Project/public/apps/world-timeline --emptyOutDir",
     "build:apps:slime-trails": "cd ../slime-trails_-bio-simulation && npx vite build --base=/apps/slime-trails/ --outDir=../Profolio_Project/public/apps/slime-trails --emptyOutDir",
@@ -12,7 +15,7 @@
     "build:apps:color-relationship-explorer": "cd ../Palette_Spectrum && npx vite build --base=/apps/color-relationship-explorer/ --outDir=../Profolio_Project/public/apps/color-relationship-explorer --emptyOutDir",
     "build:apps:political-spectrum-3d": "cd ../political-spectrum-3d && npx vite build --base=/apps/political-spectrum-3d/ --outDir=../Profolio_Project/public/apps/political-spectrum-3d --emptyOutDir",
     "build:apps:perfect-pitch": "cd ../PerfectPitch-React && npx vite build --base=/apps/perfect-pitch/ --outDir=../Profolio_Project/public/apps/perfect-pitch --emptyOutDir",
-    "build:apps": "npm run build:apps:rent-vs-buy && npm run build:apps:world-timeline && npm run build:apps:slime-trails && npm run build:apps:pathway-ai && npm run build:apps:color-relationship-explorer && npm run build:apps:political-spectrum-3d && npm run build:apps:perfect-pitch",
+    "build:apps": "npm run build:apps:deb8 && npm run build:apps:dc-map-layers && npm run build:apps:dc-mayoral-primary-2026 && npm run build:apps:rent-vs-buy && npm run build:apps:world-timeline && npm run build:apps:slime-trails && npm run build:apps:pathway-ai && npm run build:apps:color-relationship-explorer && npm run build:apps:political-spectrum-3d && npm run build:apps:perfect-pitch",
     "build": "vite build",
     "build:all": "npm run build:apps && npm run build",
     "preview": "vite preview"

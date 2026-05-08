@@ -1,17 +1,98 @@
 {
-  "hosting": {
-    "site": "portfolio-22855",
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "site": "fox-it-app",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/deb8",
+          "destination": "/deb8/index.html"
+        },
+        {
+          "source": "/deb8/**",
+          "destination": "/deb8/index.html"
+        },
+        {
+          "source": "/dc_map_layers",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc_map_layers/**",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-map-layers",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-map-layers/**",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-mayoral-primary-2026",
+          "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "/dc-mayoral-primary-2026/**",
+          "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "site": "portfolio-22855",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/deb8",
+          "destination": "/deb8/index.html"
+        },
+        {
+          "source": "/deb8/**",
+          "destination": "/deb8/index.html"
+        },
+        {
+          "source": "/dc_map_layers",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc_map_layers/**",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-map-layers",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-map-layers/**",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-mayoral-primary-2026",
+          "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "/dc-mayoral-primary-2026/**",
+          "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
 }
