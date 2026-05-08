@@ -2,6 +2,9 @@ node_modules
 dist
 .firebase
 
+# Built sub-app; rebuild with `.env.production` in sibling `classroom-seating-simulator/`
+public/apps/classroom-seating-simulator/
+
 *.local
 *.log
 npm-debug.log*

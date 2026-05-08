@@ -21,6 +21,7 @@
     "build:apps": "npm run build:apps:deb8 && npm run build:apps:dc-map-layers && npm run build:apps:dc-mayoral-primary-2026 && npm run build:apps:rent-vs-buy && npm run build:apps:world-timeline && npm run build:apps:slime-trails && npm run build:apps:pathway-ai && npm run build:apps:color-relationship-explorer && npm run build:apps:political-spectrum-3d && npm run build:apps:perfect-pitch && npm run build:apps:cookie-simulator && npm run build:apps:natural-selection && npm run build:apps:classroom-seating-simulator",
     "build": "vite build",
     "build:all": "npm run build:apps && npm run build",
+    "deploy:hosting": "npm run build:all && firebase deploy --only hosting",
     "preview": "vite preview"
   },
   "dependencies": {
