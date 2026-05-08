@@ -287,6 +287,10 @@ a:focus-visible {
   background: linear-gradient(135deg, #f5f1e8 0%, #e7eef7 100%);
 }
 
+.app-preview.cookie {
+  background: linear-gradient(135deg, #fff7e8 0%, #e9eee8 100%);
+}
+
 .deb8-prompt {
   left: 18%;
   right: 18%;
@@ -1109,6 +1113,130 @@ a:focus-visible {
 
 .black-b {
   left: 44%;
+}
+
+.cookie-pan {
+  left: 9%;
+  right: 9%;
+  bottom: 19px;
+  height: 98px;
+  border-radius: 50%;
+  background: #cfd2ce;
+  box-shadow: inset 0 -8px 0 rgb(23 34 42 / 7%), 0 18px 28px rgb(23 34 42 / 14%);
+}
+
+.cookie-disc {
+  left: 19%;
+  top: 44px;
+  width: 62%;
+  height: 78px;
+  border-radius: 50%;
+  background: #ce8b3d;
+  box-shadow: inset 0 -9px 0 #a8622d, 0 12px 18px rgb(84 52 28 / 18%);
+}
+
+.cookie-edge {
+  left: 20%;
+  top: 45px;
+  width: 60%;
+  height: 72px;
+  border-radius: 50%;
+  border: 6px solid #dda75b;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(8deg);
+}
+
+.cookie-chip {
+  width: 17px;
+  height: 15px;
+  border-radius: 45% 52% 48% 55%;
+  background: #321b13;
+  box-shadow: inset 4px 3px 0 rgb(255 255 255 / 14%);
+}
+
+.chip-a {
+  left: 34%;
+  top: 67px;
+}
+
+.chip-b {
+  left: 48%;
+  top: 56px;
+  width: 14px;
+  height: 13px;
+}
+
+.chip-c {
+  right: 33%;
+  top: 82px;
+}
+
+.chip-d {
+  left: 43%;
+  top: 99px;
+  width: 15px;
+  height: 14px;
+}
+
+.chip-e {
+  right: 44%;
+  top: 76px;
+  width: 13px;
+  height: 12px;
+}
+
+.cookie-crack {
+  height: 4px;
+  border-radius: 999px;
+  background: #7e4525;
+}
+
+.crack-a {
+  left: 55%;
+  top: 96px;
+  width: 38px;
+  transform: rotate(22deg);
+}
+
+.crack-b {
+  left: 31%;
+  top: 88px;
+  width: 31px;
+  transform: rotate(-28deg);
+}
+
+.cookie-controls {
+  left: 13px;
+  top: 13px;
+  width: 84px;
+  height: 72px;
+  border-radius: 8px;
+  background: rgb(255 250 241 / 88%);
+  box-shadow: 0 12px 22px rgb(23 34 42 / 12%);
+}
+
+.cookie-controls i {
+  left: 12px;
+  right: 12px;
+  height: 7px;
+  border-radius: 999px;
+  background: #d1a270;
+}
+
+.cookie-controls i:nth-child(1) {
+  top: 17px;
+  width: 64%;
+}
+
+.cookie-controls i:nth-child(2) {
+  top: 34px;
+  width: 78%;
+}
+
+.cookie-controls i:nth-child(3) {
+  top: 51px;
+  width: 52%;
 }
 
 .app-content {

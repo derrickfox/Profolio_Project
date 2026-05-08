@@ -121,6 +121,18 @@ const apps = [
     mode: "Static",
     accent: "pitch",
   },
+  {
+    name: "Cookie Simulator",
+    category: "Food simulation",
+    description:
+      "A 3D baking simulator for tuning recipe measurements, oven temperature, and cook time to see how a chocolate chip cookie changes.",
+    href: "/apps/cookie-simulator/index.html",
+    route: "/apps/cookie-simulator",
+    stack: ["React", "Vite", "Three.js"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "cookie",
+  },
 ];
 
 const filters = ["All", ...Array.from(new Set(apps.flatMap((app) => app.stack)))];
@@ -268,6 +280,25 @@ function AppPreview({ accent }) {
         <span className="piano-key key-f">F</span>
         <span className="black-key black-a" />
         <span className="black-key black-b" />
+      </>
+    ),
+    cookie: (
+      <>
+        <span className="cookie-pan" />
+        <span className="cookie-disc" />
+        <span className="cookie-edge" />
+        <span className="cookie-chip chip-a" />
+        <span className="cookie-chip chip-b" />
+        <span className="cookie-chip chip-c" />
+        <span className="cookie-chip chip-d" />
+        <span className="cookie-chip chip-e" />
+        <span className="cookie-crack crack-a" />
+        <span className="cookie-crack crack-b" />
+        <span className="cookie-controls">
+          <i />
+          <i />
+          <i />
+        </span>
       </>
     ),
   }[accent];
