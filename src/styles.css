@@ -283,6 +283,10 @@ a:focus-visible {
   background: linear-gradient(135deg, #e7edf9 0%, #f3e4f0 100%);
 }
 
+.app-preview.acadia {
+  background: linear-gradient(135deg, #91b7bf 0%, #2f7188 100%);
+}
+
 .app-preview.pitch {
   background: linear-gradient(135deg, #f5f1e8 0%, #e7eef7 100%);
 }
@@ -527,6 +531,116 @@ a:focus-visible {
   border-width: 3px 0 0;
   border-radius: 50% 50% 0 0;
   transform: rotate(-5deg);
+}
+
+.acadia-ocean {
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 28%, rgb(255 255 255 / 14%) 0 3px, transparent 4px),
+    linear-gradient(135deg, #5ca5b8 0%, #1f6b82 100%);
+}
+
+.acadia-island {
+  background: linear-gradient(135deg, #2f7c54 0%, #93a36f 72%, #eadf9c 100%);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 18%);
+}
+
+.island-main {
+  left: 8%;
+  top: 22px;
+  width: 66%;
+  height: 112px;
+  border-radius: 44% 56% 48% 52%;
+  clip-path: polygon(5% 46%, 22% 18%, 42% 8%, 66% 22%, 91% 13%, 98% 42%, 83% 68%, 62% 88%, 32% 84%, 12% 70%);
+}
+
+.island-schoodic {
+  right: 7%;
+  top: 58px;
+  width: 26%;
+  height: 52px;
+  border-radius: 52% 48% 44% 56%;
+  clip-path: polygon(6% 48%, 28% 13%, 68% 7%, 96% 36%, 82% 83%, 36% 92%);
+}
+
+.acadia-peak {
+  width: 48px;
+  height: 54px;
+  background: linear-gradient(135deg, #315d45 0%, #d8d1bd 72%, #fff4cf 100%);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  filter: drop-shadow(0 10px 13px rgb(23 34 42 / 18%));
+}
+
+.peak-cadillac {
+  left: 39%;
+  top: 38px;
+}
+
+.peak-bubbles {
+  left: 29%;
+  top: 65px;
+  width: 34px;
+  height: 39px;
+  opacity: 0.9;
+}
+
+.acadia-lake {
+  background: #58acc9;
+  border: 2px solid rgb(255 255 255 / 55%);
+  box-shadow: 0 8px 14px rgb(23 34 42 / 12%);
+}
+
+.lake-jordan {
+  left: 34%;
+  top: 88px;
+  width: 18px;
+  height: 46px;
+  border-radius: 999px;
+  transform: rotate(11deg);
+}
+
+.lake-eagle {
+  left: 23%;
+  top: 55px;
+  width: 19px;
+  height: 55px;
+  border-radius: 999px;
+  transform: rotate(-18deg);
+}
+
+.acadia-road,
+.acadia-trail {
+  height: 5px;
+  border-radius: 999px;
+  transform-origin: left center;
+}
+
+.road-loop {
+  left: 15%;
+  top: 122px;
+  width: 58%;
+  background: #f0ca65;
+  transform: rotate(-18deg);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 28%);
+}
+
+.trail-ridge {
+  left: 35%;
+  top: 104px;
+  width: 46%;
+  background: #fff;
+  transform: rotate(-68deg);
+}
+
+.acadia-pin {
+  left: 47%;
+  top: 46px;
+  width: 18px;
+  height: 18px;
+  border: 5px solid #f0ca65;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 8px 16px rgb(23 34 42 / 18%);
 }
 
 .deb8-prompt {

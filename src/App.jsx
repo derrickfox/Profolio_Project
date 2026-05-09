@@ -110,6 +110,18 @@ const apps = [
     accent: "spectrum",
   },
   {
+    name: "Acadia Guide",
+    category: "National park guide",
+    description:
+      "An interactive 3D tourist map for exploring Acadia National Park with real elevation data, OSM water shapes, trails, roads, and place-focused navigation.",
+    href: "/apps/acadia-guide/index.html",
+    route: "/apps/acadia-guide",
+    stack: ["React", "Vite", "Three.js", "OpenStreetMap"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "acadia",
+  },
+  {
     name: "Perfect Pitch",
     category: "Ear training",
     description:
@@ -357,6 +369,20 @@ function AppPreview({ accent }) {
           <i />
           <i />
         </span>
+      </>
+    ),
+    acadia: (
+      <>
+        <span className="acadia-ocean" />
+        <span className="acadia-island island-main" />
+        <span className="acadia-island island-schoodic" />
+        <span className="acadia-peak peak-cadillac" />
+        <span className="acadia-peak peak-bubbles" />
+        <span className="acadia-lake lake-jordan" />
+        <span className="acadia-lake lake-eagle" />
+        <span className="acadia-road road-loop" />
+        <span className="acadia-trail trail-ridge" />
+        <span className="acadia-pin" />
       </>
     ),
   }[accent];

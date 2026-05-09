@@ -53,6 +53,14 @@
           "destination": "/apps/classroom-seating-simulator/index.html"
         },
         {
+          "source": "/apps/acadia-guide",
+          "destination": "/apps/acadia-guide/index.html"
+        },
+        {
+          "source": "/apps/acadia-guide/**",
+          "destination": "/apps/acadia-guide/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -106,6 +114,14 @@
         {
           "source": "/apps/classroom-seating-simulator/**",
           "destination": "/apps/classroom-seating-simulator/index.html"
+        },
+        {
+          "source": "/apps/acadia-guide",
+          "destination": "/apps/acadia-guide/index.html"
+        },
+        {
+          "source": "/apps/acadia-guide/**",
+          "destination": "/apps/acadia-guide/index.html"
         },
         {
           "source": "**",
