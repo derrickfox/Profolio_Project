@@ -169,6 +169,18 @@ const apps = [
     mode: "Static",
     accent: "classroom",
   },
+  {
+    name: "Lift Logic",
+    category: "Strategy simulation",
+    description:
+      "An elevator dispatch optimization game where you choose algorithms, watch floors fill with riders, and race against wasted wait time.",
+    href: "/apps/elevator-game/index.html",
+    route: "/apps/elevator-game",
+    stack: ["React", "Vite", "Simulation"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "elevator",
+  },
 ];
 
 const filters = ["All", ...Array.from(new Set(apps.flatMap((app) => app.stack)))];
@@ -383,6 +395,30 @@ function AppPreview({ accent }) {
         <span className="acadia-road road-loop" />
         <span className="acadia-trail trail-ridge" />
         <span className="acadia-pin" />
+      </>
+    ),
+    elevator: (
+      <>
+        <span className="elev-building" />
+        <span className="elev-shaft shaft-a">
+          <span className="elev-car car-a" />
+        </span>
+        <span className="elev-shaft shaft-b">
+          <span className="elev-car car-b" />
+        </span>
+        <span className="elev-shaft shaft-c">
+          <span className="elev-car car-c" />
+        </span>
+        <span className="elev-floor floor-1" />
+        <span className="elev-floor floor-2" />
+        <span className="elev-floor floor-3" />
+        <span className="elev-rider rider-a" />
+        <span className="elev-rider rider-b" />
+        <span className="elev-rider rider-c" />
+        <span className="elev-score">
+          <i />
+          <i />
+        </span>
       </>
     ),
   }[accent];

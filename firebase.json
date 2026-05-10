@@ -61,6 +61,14 @@
           "destination": "/apps/acadia-guide/index.html"
         },
         {
+          "source": "/apps/elevator-game",
+          "destination": "/apps/elevator-game/index.html"
+        },
+        {
+          "source": "/apps/elevator-game/**",
+          "destination": "/apps/elevator-game/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -122,6 +130,14 @@
         {
           "source": "/apps/acadia-guide/**",
           "destination": "/apps/acadia-guide/index.html"
+        },
+        {
+          "source": "/apps/elevator-game",
+          "destination": "/apps/elevator-game/index.html"
+        },
+        {
+          "source": "/apps/elevator-game/**",
+          "destination": "/apps/elevator-game/index.html"
         },
         {
           "source": "**",

@@ -420,6 +420,101 @@ a:focus-visible {
   background: var(--coral);
 }
 
+/* ── Lift Logic (elevator) ─────────────────────────────── */
+.app-preview.elevator {
+  background: linear-gradient(135deg, #eef2f8 0%, #d8e4f0 100%);
+}
+
+.elev-building {
+  left: 10%;
+  right: 10%;
+  top: 12px;
+  bottom: 28px;
+  border-radius: 6px 6px 0 0;
+  background: #dce8f4;
+  border: 1.5px solid rgb(60 100 160 / 20%);
+  box-shadow: 0 6px 20px rgb(60 100 160 / 12%);
+}
+
+.elev-shaft {
+  bottom: 28px;
+  width: 22px;
+  top: 20px;
+  border-radius: 3px;
+  background: #bdd1e8;
+  border: 1px solid rgb(60 100 160 / 18%);
+  position: absolute;
+}
+
+.shaft-a { left: calc(10% + 10px); }
+.shaft-b { left: 50%; transform: translateX(-50%); }
+.shaft-c { right: calc(10% + 10px); }
+
+.elev-car {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  height: 18px;
+  border-radius: 3px;
+  background: #3a7bd5;
+  box-shadow: 0 2px 6px rgb(58 123 213 / 40%);
+  animation: elev-ride 3s ease-in-out infinite;
+}
+
+.car-a { bottom: 60%; animation-delay: 0s; }
+.car-b { bottom: 20%; animation-delay: -1s; }
+.car-c { bottom: 45%; animation-delay: -2s; }
+
+@keyframes elev-ride {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-28px); }
+}
+
+.elev-floor {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: rgb(60 100 160 / 22%);
+}
+
+.floor-1 { bottom: 55px; }
+.floor-2 { bottom: 82px; }
+.floor-3 { bottom: 109px; }
+
+.elev-rider {
+  width: 8px;
+  height: 14px;
+  border-radius: 50% 50% 0 0;
+  background: var(--coral);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+}
+
+.rider-a { left: 22%; bottom: 56px; }
+.rider-b { left: 44%; bottom: 83px; }
+.rider-c { right: 22%; bottom: 56px; }
+
+.elev-score {
+  position: absolute;
+  right: 12%;
+  top: 14px;
+  width: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.elev-score i {
+  display: block;
+  height: 5px;
+  border-radius: 2px;
+  background: var(--steel);
+  opacity: 0.5;
+}
+
+.elev-score i:first-child { width: 100%; }
+.elev-score i:last-child { width: 65%; }
+
 .natural-grid {
   inset: 0;
   background:
