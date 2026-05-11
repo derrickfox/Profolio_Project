@@ -134,6 +134,18 @@ const apps = [
     accent: "pitch",
   },
   {
+    name: "Tuning Riffs",
+    category: "Music catalog",
+    description:
+      "A guitar-song catalog that groups riffs by tuning, making it easier to batch songs that share standard, Eb, Drop D, Open G, and other setups.",
+    href: "/apps/tuning-riffs/index.html",
+    route: "/apps/tuning-riffs",
+    stack: ["React", "Vite", "LocalStorage"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "music",
+  },
+  {
     name: "Cookie Simulator",
     category: "Food simulation",
     description:
@@ -328,6 +340,25 @@ function AppPreview({ accent }) {
         <span className="piano-key key-f">F</span>
         <span className="black-key black-a" />
         <span className="black-key black-b" />
+      </>
+    ),
+    music: (
+      <>
+        <span className="riff-neck" />
+        <span className="riff-nut" />
+        <span className="riff-fret fret-one" />
+        <span className="riff-fret fret-two" />
+        <span className="riff-fret fret-three" />
+        <span className="riff-string string-one" />
+        <span className="riff-string string-two" />
+        <span className="riff-string string-three" />
+        <span className="riff-string string-four" />
+        <span className="riff-string string-five" />
+        <span className="riff-string string-six" />
+        <span className="riff-tuning tuning-eb">Eb</span>
+        <span className="riff-tuning tuning-drop">Drop D</span>
+        <span className="riff-card card-a" />
+        <span className="riff-card card-b" />
       </>
     ),
     cookie: (

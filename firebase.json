@@ -69,6 +69,14 @@
           "destination": "/apps/elevator-game/index.html"
         },
         {
+          "source": "/apps/tuning-riffs",
+          "destination": "/apps/tuning-riffs/index.html"
+        },
+        {
+          "source": "/apps/tuning-riffs/**",
+          "destination": "/apps/tuning-riffs/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -138,6 +146,14 @@
         {
           "source": "/apps/elevator-game/**",
           "destination": "/apps/elevator-game/index.html"
+        },
+        {
+          "source": "/apps/tuning-riffs",
+          "destination": "/apps/tuning-riffs/index.html"
+        },
+        {
+          "source": "/apps/tuning-riffs/**",
+          "destination": "/apps/tuning-riffs/index.html"
         },
         {
           "source": "**",
