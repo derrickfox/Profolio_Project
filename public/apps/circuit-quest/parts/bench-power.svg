@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 130" role="img" aria-label="Bench power supply">
+  <defs>
+    <linearGradient id="case" x1="0" x2="1">
+      <stop offset="0" stop-color="#dce8f4"/>
+      <stop offset="1" stop-color="#9fb5c9"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" x2="1">
+      <stop offset="0" stop-color="#092331"/>
+      <stop offset="1" stop-color="#0f3f4a"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="24" width="144" height="86" rx="16" fill="url(#case)" stroke="#17213b" stroke-width="5"/>
+  <rect x="34" y="38" width="64" height="34" rx="8" fill="url(#screen)" stroke="#17213b" stroke-width="4"/>
+  <text x="66" y="61" fill="#8fffd2" font-size="18" font-weight="900" text-anchor="middle" font-family="Arial, sans-serif">9.0V</text>
+  <circle cx="118" cy="55" r="13" fill="#ffe15f" stroke="#17213b" stroke-width="4"/>
+  <circle cx="144" cy="55" r="13" fill="#ff8fab" stroke="#17213b" stroke-width="4"/>
+  <path d="M113 55h10M139 55h10M144 50v10" stroke="#17213b" stroke-width="4" stroke-linecap="round"/>
+  <rect x="39" y="83" width="86" height="10" rx="5" fill="#6b7c91"/>
+  <circle cx="66" cy="88" r="11" fill="#f8fbff" stroke="#17213b" stroke-width="4"/>
+  <path d="M32 31c26-10 78-10 116 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".42"/>
+</svg>
