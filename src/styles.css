@@ -2977,3 +2977,189 @@ body.theme-python::before {
     display: none;
   }
 }
+
+/* ── Civics Simulator ───────────────────────────────────── */
+.app-preview.civics {
+  background: linear-gradient(160deg, #e8f0fb 0%, #dce8f8 100%);
+  overflow: hidden;
+}
+
+.civ-sky {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 55%;
+  background: linear-gradient(180deg, #4a90d9 0%, #87ceeb 100%);
+}
+
+/* Capitol building */
+.civ-capitol {
+  position: absolute;
+  bottom: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.civ-dome {
+  display: block;
+  width: 28px; height: 14px;
+  background: #e8e0d0;
+  border-radius: 14px 14px 0 0;
+  border: 1.5px solid #c0b898;
+  border-bottom: none;
+}
+.civ-body {
+  display: block;
+  width: 40px; height: 18px;
+  background: #e8e0d0;
+  border: 1.5px solid #c0b898;
+  border-bottom: none;
+}
+.civ-steps {
+  display: block;
+  width: 48px; height: 5px;
+  background: #d0c8b8;
+  border: 1px solid #b8b0a0;
+}
+
+/* Road strip */
+.civ-road {
+  position: absolute;
+  bottom: 22%;
+  left: 0; right: 0;
+  height: 16%;
+  background: #555;
+  overflow: hidden;
+}
+.civ-crosswalk {
+  position: absolute;
+  left: 30%; top: 0; bottom: 0;
+  width: 20px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,0.8) 0px,
+    rgba(255,255,255,0.8) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+.civ-car {
+  position: absolute;
+  top: 3px;
+  font-size: 14px;
+  line-height: 1;
+  animation: civ-drive 3.5s linear infinite;
+}
+.car-one { animation-delay: 0s; }
+.car-two { animation-delay: -1.8s; font-size: 11px; top: 5px; }
+
+@keyframes civ-drive {
+  from { transform: translateX(120%); }
+  to   { transform: translateX(-120%); }
+}
+
+/* Scales of justice */
+.civ-scales {
+  position: absolute;
+  bottom: 40%;
+  right: 12%;
+  width: 32px;
+  height: 28px;
+}
+.civ-scales-post {
+  display: block;
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 2px; height: 22px;
+  background: #8b6540;
+  transform: translateX(-50%);
+}
+.civ-scales-beam {
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: #8b6540;
+  animation: civ-tilt 3s ease-in-out infinite;
+  transform-origin: center;
+}
+.civ-scales-pan {
+  display: block;
+  position: absolute;
+  top: 6px;
+  width: 10px; height: 5px;
+  background: #c8a860;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #a08040;
+}
+.pan-left  { left: 0;  animation: civ-pan-l 3s ease-in-out infinite; }
+.pan-right { right: 0; animation: civ-pan-r 3s ease-in-out infinite; }
+
+@keyframes civ-tilt {
+  0%,100% { transform: rotate(0deg); }
+  40%     { transform: rotate(8deg); }
+  70%     { transform: rotate(-6deg); }
+}
+@keyframes civ-pan-l {
+  0%,100% { top: 6px; }
+  40%     { top: 10px; }
+  70%     { top: 3px; }
+}
+@keyframes civ-pan-r {
+  0%,100% { top: 6px; }
+  40%     { top: 3px; }
+  70%     { top: 10px; }
+}
+
+/* Bill document */
+.civ-bill {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  width: 22px; height: 28px;
+  background: #fffbf0;
+  border: 1.5px solid #d4b860;
+  border-radius: 2px;
+  padding: 4px 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+}
+.civ-bill i {
+  display: block;
+  height: 2px;
+  background: #ccc;
+  border-radius: 1px;
+}
+.civ-bill i:first-child { width: 100%; }
+.civ-bill i:nth-child(2) { width: 80%; }
+.civ-bill i:last-child  { width: 60%; }
+
+/* Stage progress dots */
+.civ-stage-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.civ-dot {
+  display: block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #cbd5e0;
+}
+.civ-dot.dot-done   { background: #057a55; }
+.civ-dot.dot-active {
+  background: #1a56db;
+  box-shadow: 0 0 0 2px rgba(26,86,219,0.3);
+  animation: civ-pulse 1.4s ease-in-out infinite;
+}
+@keyframes civ-pulse {
+  0%,100% { box-shadow: 0 0 0 2px rgba(26,86,219,0.3); }
+  50%     { box-shadow: 0 0 0 5px rgba(26,86,219,0.15); }
+}

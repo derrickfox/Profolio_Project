@@ -193,6 +193,18 @@ const apps = [
     mode: "Static",
     accent: "elevator",
   },
+  {
+    name: "Civics Simulator",
+    category: "Civics education",
+    description:
+      "An interactive civics simulator with animated scenes for each stage. Guide a bill through 10 stages of the legislative process, or fight a constitutional rights case all the way to the Supreme Court.",
+    href: "/apps/civics-simulator/index.html",
+    route: "/apps/civics-simulator",
+    stack: ["React", "Vite", "Simulation"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "civics",
+  },
 ];
 
 const filters = ["All", ...Array.from(new Set(apps.flatMap((app) => app.stack)))];
@@ -449,6 +461,37 @@ function AppPreview({ accent }) {
         <span className="elev-score">
           <i />
           <i />
+        </span>
+      </>
+    ),
+    civics: (
+      <>
+        <span className="civ-sky" />
+        <span className="civ-capitol">
+          <i className="civ-dome" />
+          <i className="civ-body" />
+          <i className="civ-steps" />
+        </span>
+        <span className="civ-road">
+          <i className="civ-crosswalk" />
+          <i className="civ-car car-one" />
+          <i className="civ-car car-two" />
+        </span>
+        <span className="civ-scales">
+          <i className="civ-scales-beam" />
+          <i className="civ-scales-pan pan-left" />
+          <i className="civ-scales-pan pan-right" />
+          <i className="civ-scales-post" />
+        </span>
+        <span className="civ-bill">
+          <i /><i /><i />
+        </span>
+        <span className="civ-stage-dots">
+          <i className="civ-dot dot-done" />
+          <i className="civ-dot dot-done" />
+          <i className="civ-dot dot-active" />
+          <i className="civ-dot" />
+          <i className="civ-dot" />
         </span>
       </>
     ),
