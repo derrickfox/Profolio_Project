@@ -5,6 +5,9 @@ dist
 # Built sub-app; rebuild with `.env.production` in sibling `classroom-seating-simulator/`
 public/apps/classroom-seating-simulator/
 
+# Built with local WMATA API key from sibling `metro-live-map/.env`
+public/apps/metro-live-map/
+
 *.local
 *.log
 npm-debug.log*

@@ -26,6 +26,18 @@ const apps = [
     accent: "maps",
   },
   {
+    name: "Metro Live Map",
+    category: "Transit map",
+    description:
+      "A live WMATA Metrorail schematic with train markers, line filters, refresh countdowns, and approximate circuit-based positions when coordinates are unavailable.",
+    href: "/apps/metro-live-map/index.html",
+    route: "/apps/metro-live-map",
+    stack: ["React", "Vite", "TypeScript", "WMATA"],
+    status: "Live",
+    mode: "Static",
+    accent: "metro",
+  },
+  {
     name: "DC Mayoral Primary 2026",
     category: "Civic guide",
     description:
@@ -240,6 +252,19 @@ function AppPreview({ accent }) {
           <i />
           <i />
         </span>
+      </>
+    ),
+    metro: (
+      <>
+        <span className="metro-tunnel metro-red" />
+        <span className="metro-tunnel metro-green" />
+        <span className="metro-tunnel metro-blue" />
+        <span className="metro-station station-a" />
+        <span className="metro-station station-b" />
+        <span className="metro-station station-c" />
+        <span className="metro-train train-a" />
+        <span className="metro-train train-b" />
+        <span className="metro-status-pill" />
       </>
     ),
     primary: (

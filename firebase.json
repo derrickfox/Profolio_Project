@@ -77,6 +77,14 @@
           "destination": "/apps/tuning-riffs/index.html"
         },
         {
+          "source": "/apps/metro-live-map",
+          "destination": "/apps/metro-live-map/index.html"
+        },
+        {
+          "source": "/apps/metro-live-map/**",
+          "destination": "/apps/metro-live-map/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -154,6 +162,14 @@
         {
           "source": "/apps/tuning-riffs/**",
           "destination": "/apps/tuning-riffs/index.html"
+        },
+        {
+          "source": "/apps/metro-live-map",
+          "destination": "/apps/metro-live-map/index.html"
+        },
+        {
+          "source": "/apps/metro-live-map/**",
+          "destination": "/apps/metro-live-map/index.html"
         },
         {
           "source": "**",

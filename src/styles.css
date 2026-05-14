@@ -251,6 +251,12 @@ a:focus-visible {
   background: linear-gradient(135deg, #bddfd5 0%, #e8f1dc 100%);
 }
 
+.app-preview.metro {
+  background:
+    radial-gradient(circle at 62% 42%, rgb(255 255 255 / 12%) 0 4px, transparent 5px),
+    linear-gradient(135deg, #07131c 0%, #132633 100%);
+}
+
 .app-preview.primary {
   background: linear-gradient(135deg, #eff1f6 0%, #f8e1d8 100%);
 }
@@ -973,6 +979,100 @@ a:focus-visible {
 .dc-layer-list i:nth-child(3) {
   top: 45px;
   background: #f0ca65;
+}
+
+.metro-tunnel {
+  height: 11px;
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 3px rgb(255 255 255 / 14%),
+    0 12px 18px rgb(0 0 0 / 22%);
+  transform-origin: left center;
+}
+
+.metro-red {
+  left: 8%;
+  top: 42px;
+  width: 76%;
+  background: #e43d30;
+  transform: rotate(34deg);
+}
+
+.metro-green {
+  left: 54%;
+  top: 14px;
+  width: 12px;
+  height: 138px;
+  background: #19a85b;
+  transform: rotate(17deg);
+}
+
+.metro-blue {
+  left: 18%;
+  top: 118px;
+  width: 72%;
+  background: #2d79c7;
+  transform: rotate(-7deg);
+}
+
+.metro-station {
+  width: 14px;
+  height: 14px;
+  border: 3px solid #eef5fb;
+  border-radius: 50%;
+  background: #07131c;
+  box-shadow: 0 0 0 3px rgb(7 19 28 / 72%);
+}
+
+.station-a { left: 47%; top: 78px; }
+.station-b { left: 63%; top: 109px; }
+.station-c { left: 30%; top: 117px; }
+
+.metro-train {
+  width: 21px;
+  height: 21px;
+  border: 3px solid #07131c;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 5px rgb(255 255 255 / 22%),
+    0 0 22px rgb(255 255 255 / 42%);
+}
+
+.metro-train::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #07131c;
+}
+
+.train-a {
+  left: 57%;
+  top: 67px;
+  background: #ffd84a;
+}
+
+.train-b {
+  left: 75%;
+  top: 110px;
+  background: #b8c4cf;
+}
+
+.metro-status-pill {
+  left: 13px;
+  bottom: 13px;
+  width: 98px;
+  height: 26px;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 16px 13px, #30d47f 0 4px, transparent 5px),
+    rgb(255 255 255 / 10%);
+  backdrop-filter: blur(8px);
 }
 
 .ballot-card {
