@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="Resistor">
+  <path d="M8 60h32M120 60h32" stroke="#6b7280" stroke-width="9" stroke-linecap="round"/>
+  <rect x="38" y="35" width="84" height="50" rx="19" fill="#e9c46a" stroke="#17213b" stroke-width="5"/>
+  <path d="M58 39v42M78 39v42M98 39v42" stroke-width="8" stroke-linecap="round"/>
+  <path d="M58 39v42" stroke="#7c3aed" stroke-width="8" stroke-linecap="round"/>
+  <path d="M78 39v42" stroke="#ef476f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M98 39v42" stroke="#22c55e" stroke-width="8" stroke-linecap="round"/>
+  <path d="M48 44c18-7 43-7 62 0" stroke="#fff8d6" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+</svg>

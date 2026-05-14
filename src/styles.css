@@ -257,6 +257,12 @@ a:focus-visible {
     linear-gradient(135deg, #07131c 0%, #132633 100%);
 }
 
+.app-preview.circuit {
+  background:
+    radial-gradient(circle at 68% 42%, rgb(255 209 102 / 48%) 0 15%, transparent 27%),
+    linear-gradient(135deg, #effbff 0%, #fff8dc 54%, #eef2ff 100%);
+}
+
 .app-preview.primary {
   background: linear-gradient(135deg, #eff1f6 0%, #f8e1d8 100%);
 }
@@ -505,6 +511,152 @@ a:focus-visible {
   top: 33px;
   width: 45%;
   background: var(--coral);
+}
+
+/* ── Circuit Quest ─────────────────────────────────────── */
+.circuit-battery {
+  left: 10%;
+  top: 82px;
+  width: 48px;
+  height: 34px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: #17213b;
+  background: #ffe15f;
+  border: 2px solid #17213b;
+  box-shadow: 3px 3px 0 rgb(23 33 59 / 25%);
+}
+
+.circuit-bulb {
+  right: 12%;
+  top: 60px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff2a8;
+  border: 3px solid #17213b;
+  filter: drop-shadow(0 0 16px rgb(255 209 102 / 80%));
+}
+
+.circuit-bulb i {
+  left: 18px;
+  bottom: -17px;
+  width: 16px;
+  height: 20px;
+  border-radius: 0 0 6px 6px;
+  background: #94a3b8;
+  border: 2px solid #17213b;
+}
+
+.circuit-switch {
+  left: 42%;
+  top: 66px;
+  width: 58px;
+  height: 32px;
+  border-radius: 9px;
+  background: #f8fbff;
+  border: 2px solid #17213b;
+}
+
+.circuit-switch::before,
+.circuit-switch::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #d9e7f2;
+  border: 2px solid #17213b;
+}
+
+.circuit-switch::before {
+  left: 11px;
+}
+
+.circuit-switch::after {
+  right: 11px;
+}
+
+.circuit-switch i {
+  left: 15px;
+  top: 15px;
+  width: 35px;
+  height: 5px;
+  border-radius: 999px;
+  background: #f59f00;
+  transform: rotate(-18deg);
+  transform-origin: left center;
+}
+
+.circuit-wire {
+  height: 7px;
+  border-radius: 999px;
+  background: #f6b73c;
+  box-shadow: 0 0 10px rgb(246 183 60 / 80%);
+}
+
+.circuit-wire.wire-one {
+  left: 20%;
+  top: 95px;
+  width: 72px;
+}
+
+.circuit-wire.wire-two {
+  left: 55%;
+  top: 82px;
+  width: 66px;
+  transform: rotate(-10deg);
+}
+
+.circuit-wire.wire-three {
+  left: 20%;
+  right: 15%;
+  top: 136px;
+}
+
+.circuit-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+  filter: drop-shadow(0 0 8px #22c8d8);
+  animation: circuitDot 1.7s linear infinite;
+}
+
+.circuit-dot.dot-one {
+  left: 24%;
+  top: 94px;
+}
+
+.circuit-dot.dot-two {
+  left: 51%;
+  top: 78px;
+  animation-delay: .45s;
+}
+
+.circuit-dot.dot-three {
+  left: 72%;
+  top: 135px;
+  animation-delay: .9s;
+}
+
+@keyframes circuitDot {
+  0% {
+    opacity: 0;
+    transform: translateX(-22px);
+  }
+  30%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(42px);
+  }
 }
 
 /* ── Lift Logic (elevator) ─────────────────────────────── */

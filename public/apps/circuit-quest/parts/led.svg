@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="LED">
+  <defs>
+    <radialGradient id="ledGlass" cx=".42" cy=".28" r=".72">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".52" stop-color="#90f7c5"/>
+      <stop offset="1" stop-color="#20c997"/>
+    </radialGradient>
+  </defs>
+  <path d="M55 89V52c0-22 14-36 31-36s31 14 31 36v37z" fill="url(#ledGlass)" stroke="#17213b" stroke-width="5"/>
+  <path d="M63 91v22M106 91v22" stroke="#8b98a8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M67 63h35" stroke="#17213b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M86 41l18 22H68z" fill="#eafff4" stroke="#17213b" stroke-width="4"/>
+  <circle cx="75" cy="36" r="8" fill="#fff" opacity=".75"/>
+</svg>

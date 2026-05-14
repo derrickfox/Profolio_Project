@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="Motor">
+  <defs>
+    <linearGradient id="motorBody" x1="0" x2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect x="30" y="34" width="86" height="58" rx="16" fill="url(#motorBody)" stroke="#17213b" stroke-width="5"/>
+  <circle cx="73" cy="63" r="22" fill="#f8fafc" stroke="#17213b" stroke-width="5"/>
+  <path d="M73 44v38M54 63h38" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+  <rect x="116" y="52" width="28" height="20" rx="7" fill="#a8b3c2" stroke="#17213b" stroke-width="5"/>
+  <path d="M40 45c20-8 44-8 66 0" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".35"/>
+</svg>

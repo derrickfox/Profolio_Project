@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="Battery">
+  <defs>
+    <linearGradient id="body" x1="0" x2="1">
+      <stop offset="0" stop-color="#434b61"/>
+      <stop offset=".48" stop-color="#252c3f"/>
+      <stop offset="1" stop-color="#596176"/>
+    </linearGradient>
+    <linearGradient id="tip" x1="0" x2="1">
+      <stop offset="0" stop-color="#f8d15c"/>
+      <stop offset="1" stop-color="#b6821d"/>
+    </linearGradient>
+  </defs>
+  <rect x="22" y="30" width="106" height="60" rx="18" fill="url(#body)" stroke="#17213b" stroke-width="5"/>
+  <rect x="128" y="48" width="16" height="24" rx="5" fill="url(#tip)" stroke="#17213b" stroke-width="5"/>
+  <rect x="32" y="38" width="38" height="44" rx="12" fill="#ffe15f"/>
+  <path d="M85 45h24" stroke="#f4f7fb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M97 33v24" stroke="#f4f7fb" stroke-width="8" stroke-linecap="round"/>
+  <path d="M38 60h26" stroke="#17213b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M43 43c22-8 55-8 78 1" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".18"/>
+</svg>

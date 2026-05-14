@@ -85,6 +85,14 @@
           "destination": "/apps/metro-live-map/index.html"
         },
         {
+          "source": "/apps/circuit-quest",
+          "destination": "/apps/circuit-quest/index.html"
+        },
+        {
+          "source": "/apps/circuit-quest/**",
+          "destination": "/apps/circuit-quest/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -170,6 +178,14 @@
         {
           "source": "/apps/metro-live-map/**",
           "destination": "/apps/metro-live-map/index.html"
+        },
+        {
+          "source": "/apps/circuit-quest",
+          "destination": "/apps/circuit-quest/index.html"
+        },
+        {
+          "source": "/apps/circuit-quest/**",
+          "destination": "/apps/circuit-quest/index.html"
         },
         {
           "source": "**",

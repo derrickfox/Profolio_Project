@@ -38,6 +38,18 @@ const apps = [
     accent: "metro",
   },
   {
+    name: "Circuit Quest",
+    category: "Education game",
+    description:
+      "A playful circuit-learning lab where learners build, test, fix, and complete mission challenges with animated current flow.",
+    href: "/apps/circuit-quest/index.html",
+    route: "/apps/circuit-quest",
+    stack: ["React", "Vite", "LocalStorage", "SVG"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "circuit",
+  },
+  {
     name: "DC Mayoral Primary 2026",
     category: "Civic guide",
     description:
@@ -518,6 +530,23 @@ function AppPreview({ accent }) {
           <i className="civ-dot" />
           <i className="civ-dot" />
         </span>
+      </>
+    ),
+    circuit: (
+      <>
+        <span className="circuit-battery">+ -</span>
+        <span className="circuit-switch">
+          <i />
+        </span>
+        <span className="circuit-bulb">
+          <i />
+        </span>
+        <span className="circuit-wire wire-one" />
+        <span className="circuit-wire wire-two" />
+        <span className="circuit-wire wire-three" />
+        <span className="circuit-dot dot-one" />
+        <span className="circuit-dot dot-two" />
+        <span className="circuit-dot dot-three" />
       </>
     ),
   }[accent];

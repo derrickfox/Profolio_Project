@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="Light bulb">
+  <defs>
+    <radialGradient id="glass" cx=".44" cy=".34" r=".68">
+      <stop offset="0" stop-color="#fff8bf"/>
+      <stop offset=".55" stop-color="#ffe96d"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2f5f8"/>
+      <stop offset="1" stop-color="#9aa8ba"/>
+    </linearGradient>
+  </defs>
+  <circle cx="78" cy="48" r="34" fill="url(#glass)" stroke="#17213b" stroke-width="5"/>
+  <path d="M61 77h34v20c0 8-7 14-17 14s-17-6-17-14z" fill="url(#metal)" stroke="#17213b" stroke-width="5"/>
+  <path d="M63 86h30M63 96h30" stroke="#5d6b7e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M62 52c10-12 22-12 32 0M70 59c5-8 11-8 16 0" fill="none" stroke="#9b6a00" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="66" cy="36" r="8" fill="#fffdf0" opacity=".7"/>
+</svg>
