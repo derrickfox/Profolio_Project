@@ -209,7 +209,7 @@ const apps = [
     name: "Civics Simulator",
     category: "Civics education",
     description:
-      "An interactive civics simulator with animated scenes for each stage. Guide a bill through 10 stages of the legislative process, or fight a constitutional rights case all the way to the Supreme Court.",
+      "Interactive civics education with animated scenes. Four modules: guide a bill through Congress, fight a constitutional case to the Supreme Court, run a presidential campaign, or navigate the federal budget from White House proposal to presidential signature.",
     href: "/apps/civics-simulator/index.html",
     route: "/apps/civics-simulator",
     stack: ["React", "Vite", "Simulation"],
