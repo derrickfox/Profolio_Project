@@ -50,6 +50,18 @@ const apps = [
     accent: "circuit",
   },
   {
+    name: "NIH Explorer",
+    category: "Health education",
+    description:
+      "A bright clinical guide to NIH Institutes and Centers, with official logos, searchable IC profiles, comparison mode, an organization tree, topic examples, and a plain-language BRICS explainer.",
+    href: "/apps/nih-explorer/index.html",
+    route: "/apps/nih-explorer",
+    stack: ["React", "Vite", "TypeScript", "NIH"],
+    status: "Live",
+    mode: "Static",
+    accent: "nih",
+  },
+  {
     name: "DC Mayoral Primary 2026",
     category: "Civic guide",
     description:
@@ -547,6 +559,21 @@ function AppPreview({ accent }) {
         <span className="circuit-dot dot-one" />
         <span className="circuit-dot dot-two" />
         <span className="circuit-dot dot-three" />
+      </>
+    ),
+    nih: (
+      <>
+        <span className="nih-logo-chip">NIH</span>
+        <span className="nih-tree-line tree-root" />
+        <span className="nih-tree-line tree-branch-a" />
+        <span className="nih-tree-line tree-branch-b" />
+        <span className="nih-node node-od">OD</span>
+        <span className="nih-node node-nci">NCI</span>
+        <span className="nih-node node-cit">CIT</span>
+        <span className="nih-panel panel-search" />
+        <span className="nih-panel panel-card-a" />
+        <span className="nih-panel panel-card-b" />
+        <span className="nih-brics-mark" />
       </>
     ),
   }[accent];

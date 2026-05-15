@@ -93,6 +93,14 @@
           "destination": "/apps/circuit-quest/index.html"
         },
         {
+          "source": "/apps/nih-explorer",
+          "destination": "/apps/nih-explorer/index.html"
+        },
+        {
+          "source": "/apps/nih-explorer/**",
+          "destination": "/apps/nih-explorer/index.html"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
@@ -186,6 +194,14 @@
         {
           "source": "/apps/circuit-quest/**",
           "destination": "/apps/circuit-quest/index.html"
+        },
+        {
+          "source": "/apps/nih-explorer",
+          "destination": "/apps/nih-explorer/index.html"
+        },
+        {
+          "source": "/apps/nih-explorer/**",
+          "destination": "/apps/nih-explorer/index.html"
         },
         {
           "source": "**",
