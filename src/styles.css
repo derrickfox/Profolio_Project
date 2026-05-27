@@ -281,6 +281,12 @@ a:focus-visible {
   background: linear-gradient(135deg, #ebe9f7 0%, #e6f4f0 100%);
 }
 
+.app-preview.jazz {
+  background:
+    radial-gradient(circle at 78% 22%, rgb(242 185 75 / 22%) 0 18%, transparent 34%),
+    linear-gradient(135deg, #091019 0%, #1b1714 100%);
+}
+
 .riff-neck {
   left: 9%;
   right: 9%;
@@ -360,6 +366,124 @@ a:focus-visible {
 .riff-card.card-b {
   top: 143px;
   width: 54px;
+}
+
+.jazz-neck {
+  left: 8%;
+  right: 8%;
+  top: 34px;
+  height: 82px;
+  border-radius: 7px;
+  border: 1px solid rgb(255 217 138 / 32%);
+  background:
+    linear-gradient(90deg, rgb(255 255 255 / 9%), transparent 10%),
+    repeating-linear-gradient(90deg, #3d2819 0 17%, #e5cf9d 17% calc(17% + 2px), #26190f calc(17% + 2px) 34%);
+  box-shadow: 0 16px 26px rgb(0 0 0 / 26%);
+}
+
+.jazz-nut {
+  left: 8%;
+  top: 34px;
+  width: 7px;
+  height: 82px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #f6dfb6, #9c7b49);
+}
+
+.jazz-fret {
+  top: 34px;
+  width: 2px;
+  height: 82px;
+  background: rgb(245 225 183 / 80%);
+}
+
+.jazz-fret.fret-a { left: 35%; }
+.jazz-fret.fret-b { left: 56%; }
+.jazz-fret.fret-c { left: 74%; }
+
+.jazz-string {
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #78838d, #f4efe2, #78838d);
+}
+
+.jazz-string.string-a { top: 43px; height: 3px; }
+.jazz-string.string-b { top: 57px; }
+.jazz-string.string-c { top: 71px; }
+.jazz-string.string-d { top: 85px; }
+.jazz-string.string-e { top: 99px; }
+.jazz-string.string-f { top: 112px; }
+
+.jazz-dot {
+  display: grid !important;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #091019;
+  font-size: 0.6rem;
+  font-weight: 900;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 28%);
+}
+
+.jazz-dot.root {
+  left: 30%;
+  top: 31px;
+  background: #f2b94b;
+}
+
+.jazz-dot.guide-a {
+  left: 43%;
+  top: 52px;
+  background: #59b8ff;
+}
+
+.jazz-dot.guide-b {
+  left: 49%;
+  top: 77px;
+  background: #59b8ff;
+}
+
+.jazz-dot.ext {
+  left: 62%;
+  top: 95px;
+  background: #73dfb6;
+}
+
+.jazz-panel {
+  left: 12%;
+  right: 12%;
+  bottom: 18px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgb(242 185 75 / 22%);
+  background: rgb(9 16 25 / 78%);
+}
+
+.jazz-panel i {
+  top: 10px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgb(242 185 75 / 76%);
+}
+
+.jazz-panel i:nth-child(1) {
+  left: 12px;
+  width: 24%;
+}
+
+.jazz-panel i:nth-child(2) {
+  left: 42%;
+  width: 18%;
+  background: rgb(89 184 255 / 72%);
+}
+
+.jazz-panel i:nth-child(3) {
+  right: 12px;
+  width: 22%;
+  background: rgb(115 223 182 / 72%);
 }
 
 .app-preview.timeline {
@@ -3541,4 +3665,65 @@ body.theme-python::before {
 @keyframes civ-pulse {
   0%,100% { box-shadow: 0 0 0 2px rgba(26,86,219,0.3); }
   50%     { box-shadow: 0 0 0 5px rgba(26,86,219,0.15); }
+}
+
+/* AI_CHANGE:
+   Tool: Antigravity
+   Model: Gemini 1.5 Pro
+   Timestamp: 2026-05-27T16:55:00-04:00
+   Purpose: Adds CSS preview styling for the KinSpin 3D family tree card.
+   Reason: Matches the portfolio aesthetic by rendering a stylized hanging mobile mobile device preview.
+*/
+/* ── KinSpin 3D ─────────────────────────────────────── */
+.app-preview.kinspin {
+  background: linear-gradient(135deg, #0d0a1b 0%, #050409 100%);
+}
+
+.kinspin-rod {
+  left: 20%;
+  right: 20%;
+  top: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ec4899, #a855f7, #06b6d4);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+.kinspin-wire {
+  width: 2px;
+  height: 38px;
+  background: linear-gradient(to bottom, #a855f7, rgba(255, 255, 255, 0.1));
+}
+
+.kinspin-wire.wire-a {
+  left: 30%;
+  top: 64px;
+}
+
+.kinspin-wire.wire-b {
+  right: 30%;
+  top: 64px;
+}
+
+.kinspin-card {
+  width: 32px;
+  height: 20px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.kinspin-card.card-a {
+  left: calc(30% - 16px);
+  top: 102px;
+  border-color: #ec4899;
+  box-shadow: 0 0 8px rgba(236, 72, 153, 0.4);
+}
+
+.kinspin-card.card-b {
+  right: calc(30% - 16px);
+  top: 102px;
+  border-color: #06b6d4;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
 }

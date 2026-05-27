@@ -13,6 +13,24 @@ const apps = [
     mode: "Backend",
     accent: "deb8",
   },
+  // AI_CHANGE:
+  // Tool: Antigravity
+  // Model: Gemini 1.5 Pro
+  // Timestamp: 2026-05-27T16:55:00-04:00
+  // Purpose: Adds KinSpin 3D family tree project to the apps catalog.
+  // Reason: Incorporates the new 3D carousel app into the portfolio site.
+  {
+    name: "KinSpin 3D",
+    category: "3D visualization",
+    description:
+      "Explore and customize your family tree in a floating 3D mobile carousel. Supports dynamic generation extensions, color themes, and automatic centering.",
+    href: "/apps/family-carousel-tree/index.html",
+    route: "/apps/family-carousel-tree",
+    stack: ["HTML", "Vanilla CSS", "JavaScript", "Vite"],
+    status: "Mounted",
+    mode: "Static",
+    accent: "kinspin",
+  },
   {
     name: "DC Map Layers",
     category: "Civic mapping",
@@ -182,6 +200,18 @@ const apps = [
     accent: "music",
   },
   {
+    name: "Jazz Shape Lab",
+    category: "Music education",
+    description:
+      "A visual jazz guitar lab for learning chord families, ii-V-I movement, guide tones, scale overlays, and reusable fretboard shapes.",
+    href: "/apps/jazz-shape-lab/index.html",
+    route: "/apps/jazz-shape-lab",
+    stack: ["React", "Vite", "TypeScript", "Music Theory"],
+    status: "Live",
+    mode: "Static",
+    accent: "jazz",
+  },
+  {
     name: "Cookie Simulator",
     category: "Food simulation",
     description:
@@ -261,6 +291,21 @@ function AppPreview({ accent }) {
           <i />
         </span>
         <span className="deb8-meter" />
+      </>
+    ),
+    // AI_CHANGE:
+    // Tool: Antigravity
+    // Model: Gemini 1.5 Pro
+    // Timestamp: 2026-05-27T16:55:00-04:00
+    // Purpose: Defines visual nodes for the KinSpin 3D family tree card preview.
+    // Reason: Displays a stylized rod, wire, and card layout representing the mobile tree.
+    kinspin: (
+      <>
+        <span className="kinspin-rod" />
+        <span className="kinspin-wire wire-a" />
+        <span className="kinspin-wire wire-b" />
+        <span className="kinspin-card card-a" />
+        <span className="kinspin-card card-b" />
       </>
     ),
     maps: (
@@ -420,6 +465,30 @@ function AppPreview({ accent }) {
         <span className="riff-tuning tuning-drop">Drop D</span>
         <span className="riff-card card-a" />
         <span className="riff-card card-b" />
+      </>
+    ),
+    jazz: (
+      <>
+        <span className="jazz-neck" />
+        <span className="jazz-nut" />
+        <span className="jazz-fret fret-a" />
+        <span className="jazz-fret fret-b" />
+        <span className="jazz-fret fret-c" />
+        <span className="jazz-string string-a" />
+        <span className="jazz-string string-b" />
+        <span className="jazz-string string-c" />
+        <span className="jazz-string string-d" />
+        <span className="jazz-string string-e" />
+        <span className="jazz-string string-f" />
+        <span className="jazz-dot root">1</span>
+        <span className="jazz-dot guide-a">3</span>
+        <span className="jazz-dot guide-b">b7</span>
+        <span className="jazz-dot ext">13</span>
+        <span className="jazz-panel">
+          <i />
+          <i />
+          <i />
+        </span>
       </>
     ),
     cookie: (

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- AI_CHANGE:
+         Tool: Antigravity
+         Model: Gemini 3.5 Flash
+         Timestamp: 2026-05-27T15:00:00-04:00
+         Purpose: Replaces WebGL canvas with 2D particles canvas and sets up CSS 3D perspective stage containers.
+         Reason: Changes layout components to support the pure CSS 3D rendering pipeline for sandboxed environment compatibility.
+    -->
+    <link rel="icon" type="image/svg+xml" href="/apps/family-carousel-tree/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Best Practices -->
+    <title>KinSpin 3D - Interactive 3D Family Tree Carousel</title>
+    <meta name="description" content="Explore, spin, and edit your family tree in a stunning 3D interactive carousel. View maternal and paternal lineages floating in a modern, glassmorphic space environment." />
+    
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Core Stylesheet -->
+    <script type="module" crossorigin src="/apps/family-carousel-tree/assets/index-Cweo7LsV.js"></script>
+    <link rel="stylesheet" crossorigin href="/apps/family-carousel-tree/assets/index-vF4AMLCZ.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- 2D Canvas Background (WebGL-free particles) -->
+      <canvas id="particles-canvas" aria-label="3D Starfield Background Canvas"></canvas>
+
+      <!-- CSS 3D Stage (Where the mobile hierarchy is built and spun) -->
+      <div id="perspective-stage">
+        <div id="carousel-system"></div>
+      </div>
+
+      <!-- Top Right Controls -->
+      <div class="top-right-controls">
+        <button id="btn-rotate-tree" class="rotate-control-btn" aria-label="Drag to rotate tree" title="Drag to rotate tree">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+        </button>
+
+        <div class="zoom-widget">
+          <button id="btn-zoom-in" class="zoom-btn" aria-label="Zoom in" title="Zoom in">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+          <button id="btn-zoom-out" class="zoom-btn" aria-label="Zoom out" title="Zoom out">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </button>
+        </div>
+
+        <!-- AI_CHANGE:
+             Tool: Antigravity
+             Model: Gemini 1.5 Pro
+             Timestamp: 2026-05-27T16:51:00-04:00
+             Purpose: Adds vertical navigation (pan up/down) widget to top-right controls.
+             Reason: Provides buttons to navigate vertical generations of the tree.
+        -->
+        <div class="zoom-widget" style="margin-top: 8px;">
+          <button id="btn-pan-up" class="zoom-btn" aria-label="Pan up" title="Pan up">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+          <button id="btn-pan-down" class="zoom-btn" aria-label="Pan down" title="Pan down">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Loading overlay -->
+      <div id="loading-screen" class="loading-overlay">
+        <div class="loader-content">
+          <div class="spinner"></div>
+          <p>Weaving your family tree in 3D...</p>
+        </div>
+      </div>
+
+      <!-- Glassmorphic Controls Sidebar -->
+      <aside id="sidebar-controls" class="glass-sidebar" aria-label="Tree Controls">
+        <header class="sidebar-header">
+          <h1>KinSpin 3D</h1>
+          <p class="tagline">Your lineage in orbit</p>
+        </header>
+
+        <hr class="separator" />
+
+        <div class="sidebar-scroll-content">
+          <!-- Interaction tips -->
+          <section class="control-section" aria-labelledby="heading-tips">
+            <h2 id="heading-tips">Interactions</h2>
+            <ul class="tips-list">
+              <li><strong>Drag Rotate Button (Top-Right)</strong>: Spin the family tree</li>
+              <li><strong>Scroll / Pinch</strong>: Zoom in and out</li>
+              <li><strong>Click Cards</strong>: View details and edit names</li>
+            </ul>
+          </section>
+
+          <!-- System Controls -->
+          <section class="control-section" aria-labelledby="heading-system">
+            <h2 id="heading-system">System Settings</h2>
+
+
+            <div class="control-group">
+              <label for="slider-spin-speed" class="control-label">Rotation Speed</label>
+              <input type="range" id="slider-spin-speed" min="0.1" max="2.0" step="0.1" value="0.6" />
+            </div>
+
+            <div class="control-group">
+              <label for="theme-selector" class="control-label">Color Theme</label>
+              <select id="theme-selector" class="custom-select">
+                <option value="aurora">Aurora Borealis (Teal & Violet)</option>
+                <option value="cyberpunk">Cyber Neon (Cyan & Pink)</option>
+                <option value="royal">Imperial Royal (Indigo & Gold)</option>
+                <option value="emerald">Enchanted Forest (Emerald & Lime)</option>
+              </select>
+            </div>
+            
+            <!-- AI_CHANGE:
+                 Tool: Antigravity
+                 Model: Gemini 1.5 Pro
+                 Timestamp: 2026-05-27T16:35:00-04:00
+                 Purpose: Adds the Add Generation button in the settings section of the sidebar.
+                 Reason: Provides a clear trigger to invoke dynamic generations logic in the layout engine.
+            -->
+            <button id="btn-add-generation" class="action-btn primary-btn" style="margin-bottom: 12px; width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+              Add Generation
+            </button>
+
+            <button id="btn-reset-camera" class="action-btn secondary-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              Reset View
+            </button>
+          </section>
+
+          <!-- Save and Sync -->
+          <section class="control-section" aria-labelledby="heading-data">
+            <h2 id="heading-data">Data Management</h2>
+            <div class="button-row">
+              <button id="btn-export-json" class="action-btn primary-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Export JSON
+              </button>
+              <button id="btn-import-trigger" class="action-btn secondary-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                Import JSON
+              </button>
+              <input type="file" id="file-import-input" accept=".json" style="display: none;" />
+            </div>
+            <button id="btn-reset-tree" class="action-btn danger-btn">
+              Reset Tree Data
+            </button>
+          </section>
+        </div>
+
+        <footer class="sidebar-footer">
+          <p>Created with Antigravity & CSS 3D</p>
+        </footer>
+      </aside>
+    </div>
+
+    <!-- Application Script -->
+      <style>
+      #profolio-back{position:fixed;bottom:16px;left:16px;z-index:99999;background:rgba(0,0,0,0.72);color:#fff;font-family:system-ui,sans-serif;font-size:13px;font-weight:600;text-decoration:none;padding:6px 14px;border-radius:20px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.15);transition:background 0.2s,opacity 0.2s;line-height:1.4;letter-spacing:0.01em;opacity:0.35}
+      #profolio-back:hover{background:rgba(0,0,0,0.92);opacity:1}
+    </style>
+    <a id="profolio-back" href="/">&#8592; Profolio</a>
+  </body>
+</html>
