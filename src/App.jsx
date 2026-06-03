@@ -115,6 +115,24 @@ const apps = [
     mode: "Static",
     accent: "timeline",
   },
+  // AI_CHANGE:
+  // Tool: Codex
+  // Model: GPT-5
+  // Timestamp: 2026-06-02T21:02:12-04:00
+  // Purpose: Adds the Mesoamerica History Map to the portfolio app catalog.
+  // Reason: The new public app needs a mounted portfolio entry after its standalone GitHub repo was created.
+  {
+    name: "Mesoamerica History Map",
+    category: "History education",
+    description:
+      "A map-timeline for exploring Mesoamerican cultures, cities, pyramid monuments, and shared religious themes without flattening the history into one lineage.",
+    href: "/apps/mesoamerica-history-map/index.html",
+    route: "/apps/mesoamerica-history-map",
+    stack: ["React", "Vite", "Leaflet", "History"],
+    status: "Live",
+    mode: "Static",
+    accent: "mesoamerica",
+  },
   {
     name: "Slime Trails",
     category: "Simulation",
@@ -382,6 +400,27 @@ function AppPreview({ accent }) {
         <span className="timeline-event event-c">Moon</span>
         <span className="timeline-track track-a" />
         <span className="timeline-track track-b" />
+      </>
+    ),
+    // AI_CHANGE:
+    // Tool: Codex
+    // Model: GPT-5
+    // Timestamp: 2026-06-02T21:02:12-04:00
+    // Purpose: Defines the portfolio preview art for the Mesoamerica History Map card.
+    // Reason: The catalog card should visually communicate map regions, pyramid markers, and timeline controls.
+    mesoamerica: (
+      <>
+        <span className="meso-land land-main" />
+        <span className="meso-land land-yucatan" />
+        <span className="meso-region region-a" />
+        <span className="meso-region region-b" />
+        <span className="meso-region region-c" />
+        <span className="meso-pyramid pyramid-a" />
+        <span className="meso-pyramid pyramid-b" />
+        <span className="meso-pyramid pyramid-c" />
+        <span className="meso-timeline" />
+        <span className="meso-event event-one" />
+        <span className="meso-event event-two" />
       </>
     ),
     slime: (
