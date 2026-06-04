@@ -11,108 +11,13 @@
         "**/.*",
         "**/node_modules/**"
       ],
-      "rewrites": [
+      "headers": [
         {
-          "source": "/deb8",
-          "destination": "/deb8/index.html"
-        },
-        {
-          "source": "/deb8/**",
-          "destination": "/deb8/index.html"
-        },
-        {
-          "source": "/dc_map_layers",
-          "destination": "/dc_map_layers/index.html"
-        },
-        {
-          "source": "/dc_map_layers/**",
-          "destination": "/dc_map_layers/index.html"
-        },
-        {
-          "source": "/dc-map-layers",
-          "destination": "/dc_map_layers/index.html"
-        },
-        {
-          "source": "/dc-map-layers/**",
-          "destination": "/dc_map_layers/index.html"
-        },
-        {
-          "source": "/dc-mayoral-primary-2026",
-          "destination": "/dc-mayoral-primary-2026/index.html"
-        },
-        {
-          "source": "/dc-mayoral-primary-2026/**",
-          "destination": "/dc-mayoral-primary-2026/index.html"
-        },
-        {
-          "source": "/apps/classroom-seating-simulator",
-          "destination": "/apps/classroom-seating-simulator/index.html"
-        },
-        {
-          "source": "/apps/classroom-seating-simulator/**",
-          "destination": "/apps/classroom-seating-simulator/index.html"
-        },
-        {
-          "source": "/apps/acadia-guide",
-          "destination": "/apps/acadia-guide/index.html"
-        },
-        {
-          "source": "/apps/acadia-guide/**",
-          "destination": "/apps/acadia-guide/index.html"
-        },
-        {
-          "source": "/apps/elevator-game",
-          "destination": "/apps/elevator-game/index.html"
-        },
-        {
-          "source": "/apps/elevator-game/**",
-          "destination": "/apps/elevator-game/index.html"
-        },
-        {
-          "source": "/apps/tuning-riffs",
-          "destination": "/apps/tuning-riffs/index.html"
-        },
-        {
-          "source": "/apps/tuning-riffs/**",
-          "destination": "/apps/tuning-riffs/index.html"
-        },
-        {
-          "source": "/apps/metro-live-map",
-          "destination": "/apps/metro-live-map/index.html"
-        },
-        {
-          "source": "/apps/metro-live-map/**",
-          "destination": "/apps/metro-live-map/index.html"
-        },
-        {
-          "source": "/apps/circuit-quest",
-          "destination": "/apps/circuit-quest/index.html"
-        },
-        {
-          "source": "/apps/circuit-quest/**",
-          "destination": "/apps/circuit-quest/index.html"
-        },
-        {
-          "source": "/apps/nih-explorer",
-          "destination": "/apps/nih-explorer/index.html"
-        },
-        {
-          "source": "/apps/nih-explorer/**",
-          "destination": "/apps/nih-explorer/index.html"
-        },
-        {
-          "source": "**",
-          "destination": "/index.html"
+          "source": "**/*.html",
+          "headers": [
+            { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+          ]
         }
-      ]
-    },
-    {
-      "site": "portfolio-22855",
-      "public": "dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
       ],
       "rewrites": [
         {
@@ -202,6 +107,165 @@
         {
           "source": "/apps/nih-explorer/**",
           "destination": "/apps/nih-explorer/index.html"
+        },
+        {
+          "source": "/apps/jazz-shape-lab",
+          "destination": "/apps/jazz-shape-lab/index.html"
+        },
+        {
+          "source": "/apps/jazz-shape-lab/**",
+          "destination": "/apps/jazz-shape-lab/index.html"
+        },
+        {
+          "source": "/apps/fretflow",
+          "destination": "/apps/fretflow/index.html"
+        },
+        {
+          "source": "/apps/fretflow/**",
+          "destination": "/apps/fretflow/index.html"
+        },
+        {
+          "source": "/apps/mesoamerica-history-map",
+          "destination": "/apps/mesoamerica-history-map/index.html"
+        },
+        {
+          "source": "/apps/mesoamerica-history-map/**",
+          "destination": "/apps/mesoamerica-history-map/index.html"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "site": "portfolio-22855",
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "**/*.html",
+          "headers": [
+            { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+          ]
+        }
+      ],
+      "rewrites": [
+        {
+          "source": "/deb8",
+          "destination": "/deb8/index.html"
+        },
+        {
+          "source": "/deb8/**",
+          "destination": "/deb8/index.html"
+        },
+        {
+          "source": "/dc_map_layers",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc_map_layers/**",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-map-layers",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-map-layers/**",
+          "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/dc-mayoral-primary-2026",
+          "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "/dc-mayoral-primary-2026/**",
+          "destination": "/dc-mayoral-primary-2026/index.html"
+        },
+        {
+          "source": "/apps/classroom-seating-simulator",
+          "destination": "/apps/classroom-seating-simulator/index.html"
+        },
+        {
+          "source": "/apps/classroom-seating-simulator/**",
+          "destination": "/apps/classroom-seating-simulator/index.html"
+        },
+        {
+          "source": "/apps/acadia-guide",
+          "destination": "/apps/acadia-guide/index.html"
+        },
+        {
+          "source": "/apps/acadia-guide/**",
+          "destination": "/apps/acadia-guide/index.html"
+        },
+        {
+          "source": "/apps/elevator-game",
+          "destination": "/apps/elevator-game/index.html"
+        },
+        {
+          "source": "/apps/elevator-game/**",
+          "destination": "/apps/elevator-game/index.html"
+        },
+        {
+          "source": "/apps/tuning-riffs",
+          "destination": "/apps/tuning-riffs/index.html"
+        },
+        {
+          "source": "/apps/tuning-riffs/**",
+          "destination": "/apps/tuning-riffs/index.html"
+        },
+        {
+          "source": "/apps/metro-live-map",
+          "destination": "/apps/metro-live-map/index.html"
+        },
+        {
+          "source": "/apps/metro-live-map/**",
+          "destination": "/apps/metro-live-map/index.html"
+        },
+        {
+          "source": "/apps/circuit-quest",
+          "destination": "/apps/circuit-quest/index.html"
+        },
+        {
+          "source": "/apps/circuit-quest/**",
+          "destination": "/apps/circuit-quest/index.html"
+        },
+        {
+          "source": "/apps/nih-explorer",
+          "destination": "/apps/nih-explorer/index.html"
+        },
+        {
+          "source": "/apps/nih-explorer/**",
+          "destination": "/apps/nih-explorer/index.html"
+        },
+        {
+          "source": "/apps/jazz-shape-lab",
+          "destination": "/apps/jazz-shape-lab/index.html"
+        },
+        {
+          "source": "/apps/jazz-shape-lab/**",
+          "destination": "/apps/jazz-shape-lab/index.html"
+        },
+        {
+          "source": "/apps/fretflow",
+          "destination": "/apps/fretflow/index.html"
+        },
+        {
+          "source": "/apps/fretflow/**",
+          "destination": "/apps/fretflow/index.html"
+        },
+        {
+          "source": "/apps/mesoamerica-history-map",
+          "destination": "/apps/mesoamerica-history-map/index.html"
+        },
+        {
+          "source": "/apps/mesoamerica-history-map/**",
+          "destination": "/apps/mesoamerica-history-map/index.html"
         },
         {
           "source": "**",

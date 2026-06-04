@@ -230,6 +230,18 @@ const apps = [
     accent: "jazz",
   },
   {
+    name: "FretFlow",
+    category: "Guitar learning",
+    description:
+      "Guitar Pro fretboard trainer with synced tab playback, multi-track guitar detection, and adjustable lookahead and linger on the virtual neck.",
+    href: "/apps/fretflow/index.html",
+    route: "/apps/fretflow",
+    stack: ["React", "Vite", "TypeScript", "alphaTab"],
+    status: "Live",
+    mode: "Static",
+    accent: "music",
+  },
+  {
     name: "Cookie Simulator",
     category: "Food simulation",
     description:
