@@ -43,6 +43,24 @@ const apps = [
     mode: "Static",
     accent: "maps",
   },
+  // AI_CHANGE:
+  // Tool: Codex
+  // Model: GPT-5
+  // Timestamp: 2026-06-08T14:38:41-04:00
+  // Purpose: Adds NJ Layer Lab to the portfolio app catalog.
+  // Reason: The newly published New Jersey map app needs a mounted portfolio entry and public launch path.
+  {
+    name: "NJ Layer Lab",
+    category: "Civic mapping",
+    description:
+      "A New Jersey map lab with county filters, rail and canal history, parks, historical sites, attractions, Weird NJ locations, and forest composition overlays.",
+    href: "/apps/nj-layer-lab/index.html",
+    route: "/apps/nj-layer-lab",
+    stack: ["React", "Vite", "Leaflet", "NJDEP"],
+    status: "Live",
+    mode: "Static",
+    accent: "maps",
+  },
   {
     name: "Metro Live Map",
     category: "Transit map",

@@ -45,6 +45,14 @@
           "destination": "/dc_map_layers/index.html"
         },
         {
+          "source": "/apps/nj-layer-lab",
+          "destination": "/apps/nj-layer-lab/index.html"
+        },
+        {
+          "source": "/apps/nj-layer-lab/**",
+          "destination": "/apps/nj-layer-lab/index.html"
+        },
+        {
           "source": "/dc-mayoral-primary-2026",
           "destination": "/dc-mayoral-primary-2026/index.html"
         },
@@ -178,6 +186,14 @@
         {
           "source": "/dc-map-layers/**",
           "destination": "/dc_map_layers/index.html"
+        },
+        {
+          "source": "/apps/nj-layer-lab",
+          "destination": "/apps/nj-layer-lab/index.html"
+        },
+        {
+          "source": "/apps/nj-layer-lab/**",
+          "destination": "/apps/nj-layer-lab/index.html"
         },
         {
           "source": "/dc-mayoral-primary-2026",
