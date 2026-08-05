@@ -247,6 +247,24 @@ const apps = [
     mode: "Static",
     accent: "jazz",
   },
+  // AI_CHANGE:
+  // Tool: Codex
+  // Model: GPT-5
+  // Timestamp: 2026-08-04T20:36:00-04:00
+  // Purpose: Adds the unified FretFlow Studio guitar platform to the public portfolio catalog.
+  // Reason: The standalone app now combines the shared song library, tab player, practice tools, uploads, and two interactive lesson courses.
+  {
+    name: "FretFlow Studio",
+    category: "Guitar learning platform",
+    description:
+      "A unified guitar practice studio with a shared song library, animated tab playback, tunings, chord and scale study, ear training, uploads, and 138 interactive course companions.",
+    href: "/apps/fretflow-studio/index.html",
+    route: "/apps/fretflow-studio",
+    stack: ["React", "Vite", "TypeScript", "Firebase", "alphaTab"],
+    status: "Live",
+    mode: "Static",
+    accent: "studio",
+  },
   {
     name: "FretFlow",
     category: "Guitar learning",
@@ -534,6 +552,28 @@ function AppPreview({ accent }) {
         <span className="riff-tuning tuning-drop">Drop D</span>
         <span className="riff-card card-a" />
         <span className="riff-card card-b" />
+      </>
+    ),
+    studio: (
+      <>
+        <span className="studio-preview-bar">
+          <i />
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="studio-preview-neck" />
+        <span className="studio-preview-string string-a" />
+        <span className="studio-preview-string string-b" />
+        <span className="studio-preview-string string-c" />
+        <span className="studio-preview-string string-d" />
+        <span className="studio-preview-string string-e" />
+        <span className="studio-preview-string string-f" />
+        <span className="studio-preview-dot dot-a">1</span>
+        <span className="studio-preview-dot dot-b">3</span>
+        <span className="studio-preview-dot dot-c">5</span>
+        <span className="studio-preview-panel panel-a" />
+        <span className="studio-preview-panel panel-b" />
       </>
     ),
     jazz: (

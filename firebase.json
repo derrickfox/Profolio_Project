@@ -151,6 +151,14 @@
           "destination": "/apps/fretflow/index.html"
         },
         {
+          "source": "/apps/fretflow-studio",
+          "destination": "/apps/fretflow-studio/index.html"
+        },
+        {
+          "source": "/apps/fretflow-studio/**",
+          "destination": "/apps/fretflow-studio/index.html"
+        },
+        {
           "source": "/apps/mesoamerica-history-map",
           "destination": "/apps/mesoamerica-history-map/index.html"
         },
@@ -310,6 +318,14 @@
         {
           "source": "/apps/fretflow/**",
           "destination": "/apps/fretflow/index.html"
+        },
+        {
+          "source": "/apps/fretflow-studio",
+          "destination": "/apps/fretflow-studio/index.html"
+        },
+        {
+          "source": "/apps/fretflow-studio/**",
+          "destination": "/apps/fretflow-studio/index.html"
         },
         {
           "source": "/apps/mesoamerica-history-map",

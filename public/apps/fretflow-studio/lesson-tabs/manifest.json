@@ -1,0 +1,971 @@
+[
+  {
+    "title": "Fingerpicking Essentials Level 1",
+    "fileName": "1.Fingerpicking_Essentials_Level_1_.pdf",
+    "dataFile": "fingerpicking-essentials-level-1.json",
+    "tempo": 120,
+    "eventCount": 132,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Melancholic Triads",
+    "fileName": "1.Melancholic_Triads.pdf",
+    "dataFile": "melancholic-triads.json",
+    "tempo": 60,
+    "eventCount": 160,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Walk in the Park Blues",
+    "fileName": "1.Walk_in_the_Park_Blues.pdf",
+    "dataFile": "walk-in-the-park-blues.json",
+    "tempo": 120,
+    "eventCount": 123,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Delta Blues",
+    "fileName": "10.Delta_Blues.pdf",
+    "dataFile": "delta-blues.json",
+    "tempo": 140,
+    "eventCount": 177,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Strumming Essentials Level 4",
+    "fileName": "10.Strumming_Essentials_Level_4.pdf",
+    "dataFile": "strumming-essentials-level-4.json",
+    "tempo": 120,
+    "eventCount": 59,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Chordal Groove",
+    "fileName": "10._Chordal_Groove.pdf",
+    "dataFile": "chordal-groove.json",
+    "tempo": 80,
+    "eventCount": 180,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Lullaby",
+    "fileName": "11.Lullaby.pdf",
+    "dataFile": "lullaby.json",
+    "tempo": 130,
+    "eventCount": 93,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Meandering Strum in G",
+    "fileName": "11.Meandering_Strum_in_G.pdf",
+    "dataFile": "meandering-strum-in-g.json",
+    "tempo": 100,
+    "eventCount": 213,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Spanish Rodeo (Flatpicking)",
+    "fileName": "11.Spanish_Rodeo_Flatpicking.pdf",
+    "dataFile": "spanish-rodeo-flatpicking.json",
+    "tempo": 120,
+    "eventCount": 129,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Bumblebee",
+    "fileName": "12.Bumblebee.pdf",
+    "dataFile": "bumblebee.json",
+    "tempo": 90,
+    "eventCount": 65,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "The Tearjerker",
+    "fileName": "12.The-Tearjerker.pdf",
+    "dataFile": "the-tearjerker.json",
+    "tempo": 70,
+    "eventCount": 662,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "The High Road",
+    "fileName": "12.The_High_Road.pdf",
+    "dataFile": "the-high-road.json",
+    "tempo": 85,
+    "eventCount": 178,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Strumming Essentials Level 5",
+    "fileName": "13.-Strumming_Essentials_Level_5.pdf",
+    "dataFile": "strumming-essentials-level-5.json",
+    "tempo": 80,
+    "eventCount": 65,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Countryside Pickin’",
+    "fileName": "13.Countryside_Pickin.pdf",
+    "dataFile": "countryside-pickin.json",
+    "tempo": 105,
+    "eventCount": 217,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "The Waterfall",
+    "fileName": "13.The_Waterfall.pdf",
+    "dataFile": "the-waterfall.json",
+    "tempo": 80,
+    "eventCount": 99,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Fragile Dreams Level 3",
+    "fileName": "14.-Fragile_Dreams_Level_3.pdf",
+    "dataFile": "fragile-dreams-level-3.json",
+    "tempo": 85,
+    "eventCount": 63,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "The Stairs",
+    "fileName": "14.-The_Stairs.pdf",
+    "dataFile": "the-stairs.json",
+    "tempo": 120,
+    "eventCount": 149,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Spanish Rodeo (Rhythm Guitar)",
+    "fileName": "15.Spanish_Rodeo_Rhythm_Guitar.pdf",
+    "dataFile": "spanish-rodeo-rhythm.json",
+    "tempo": 120,
+    "eventCount": 399,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Railroad Blues",
+    "fileName": "15_Railroad_Blues.pdf",
+    "dataFile": "railroad-blues.json",
+    "tempo": 135,
+    "eventCount": 89,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Acoustic Blues Riff",
+    "fileName": "16.Acoustic_Blues_Riff.pdf",
+    "dataFile": "acoustic-blues-riff.json",
+    "tempo": 108,
+    "eventCount": 138,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Strummin’ & Pluckin’ (Fingerpicking)",
+    "fileName": "16.Strumming_n_plucking-Fingerpicking.pdf",
+    "dataFile": "strummin-pluckin-fingerpicking.json",
+    "tempo": 80,
+    "eventCount": 65,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Fire and Rain",
+    "fileName": "17.Fire_and_Rain.pdf",
+    "dataFile": "fire-and-rain.json",
+    "tempo": 70,
+    "eventCount": 207,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Drop D Fingerpicking Level 3",
+    "fileName": "18.-Drop_D_Fingerpicking_Level_3.pdf",
+    "dataFile": "drop-d-fingerpicking-level-3.json",
+    "tempo": 60,
+    "eventCount": 124,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Percussive Blues in E",
+    "fileName": "19.Percussive_Blues_in_E.pdf",
+    "dataFile": "percussive-blues-in-e.json",
+    "tempo": 110,
+    "eventCount": 242,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Desert Blues",
+    "fileName": "2.-Desert_Blues.pdf",
+    "dataFile": "desert-blues.json",
+    "tempo": 90,
+    "eventCount": 223,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Fragile Dreams Level 1",
+    "fileName": "2.-Fragile_Dreams_Level_1.pdf",
+    "dataFile": "fragile-dreams-level-1.json",
+    "tempo": 80,
+    "eventCount": 71,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Mirthful Major",
+    "fileName": "2.Mirthful_Major.pdf",
+    "dataFile": "mirthful-major.json",
+    "tempo": 125,
+    "eventCount": 128,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Sinister Chords",
+    "fileName": "2.Sinister_Chords.pdf",
+    "dataFile": "sinister-chords.json",
+    "tempo": 100,
+    "eventCount": 149,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Butterfly",
+    "fileName": "20.Butterfly.pdf",
+    "dataFile": "butterfly.json",
+    "tempo": 80,
+    "eventCount": 145,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Drop D Fingerpicking Level 1",
+    "fileName": "3.-Drop_D_Fingerpicking_Level_1.pdf",
+    "dataFile": "drop-d-fingerpicking-level-1.json",
+    "tempo": 60,
+    "eventCount": 210,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Spoonful of Blues",
+    "fileName": "3.-Spoonful_of_Blues.pdf",
+    "dataFile": "spoonful-of-blues.json",
+    "tempo": 115,
+    "eventCount": 189,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Easy Walking Bass",
+    "fileName": "3.Easy_Walking_Bass.pdf",
+    "dataFile": "easy-walking-bass.json",
+    "tempo": 110,
+    "eventCount": 58,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Minor Mysteries",
+    "fileName": "3.Minor_Mysteries.pdf",
+    "dataFile": "minor-mysteries.json",
+    "tempo": 120,
+    "eventCount": 104,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Alluring Arpeggios",
+    "fileName": "4.-Alluring_Arpeggios.pdf",
+    "dataFile": "alluring-arpeggios.json",
+    "tempo": 85,
+    "eventCount": 169,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Major Scales",
+    "fileName": "4.-Major-Scales.pdf",
+    "dataFile": "major-scales.json",
+    "tempo": 80,
+    "eventCount": 82,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Strumming Essentials Level 2",
+    "fileName": "4.-Strumming_Essentials_Level_2.pdf",
+    "dataFile": "strumming-essentials-level-2.json",
+    "tempo": 120,
+    "eventCount": 56,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Fingerpicking Essentials Level 2",
+    "fileName": "4.Fingerpicking_Essentials_Level_2_.pdf",
+    "dataFile": "fingerpicking-essentials-level-2.json",
+    "tempo": 120,
+    "eventCount": 101,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Soul Slappin’",
+    "fileName": "4.Soul_Slappin.pdf",
+    "dataFile": "soul-slappin.json",
+    "tempo": 80,
+    "eventCount": 89,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Coming Home",
+    "fileName": "5-Coming_Home.pdf",
+    "dataFile": "coming-home.json",
+    "tempo": 80,
+    "eventCount": 231,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Quirky Fingerstyle",
+    "fileName": "5.-Quirky_Fingerstyle.pdf",
+    "dataFile": "quirky-fingerstyle.json",
+    "tempo": 120,
+    "eventCount": 65,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "The I – IV – V Progression",
+    "fileName": "5.-The_I–IV–V_Progression.pdf",
+    "dataFile": "the-i-iv-v-progression.json",
+    "tempo": 80,
+    "eventCount": 23,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Pentatonic Roads",
+    "fileName": "5.Pentatonic_Roads.pdf",
+    "dataFile": "pentatonic-roads.json",
+    "tempo": 80,
+    "eventCount": 217,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "The Beauty of Life",
+    "fileName": "5.The_Beauty_of_Life.pdf",
+    "dataFile": "the-beauty-of-life.json",
+    "tempo": 105,
+    "eventCount": 196,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Fragile Dreams Level 2",
+    "fileName": "6.-Fragile_Dreams_Level_2.pdf",
+    "dataFile": "fragile-dreams-level-2.json",
+    "tempo": 80,
+    "eventCount": 125,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Minor Scales",
+    "fileName": "6.-Minor_Scale.pdf",
+    "dataFile": "minor-scales.json",
+    "tempo": 80,
+    "eventCount": 86,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Holiday Dreams",
+    "fileName": "6.Holiday-Dreams.pdf",
+    "dataFile": "holiday-dreams.json",
+    "tempo": 90,
+    "eventCount": 178,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Pondering Past",
+    "fileName": "6.Pondering_Past.pdf",
+    "dataFile": "pondering-past.json",
+    "tempo": 135,
+    "eventCount": 127,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Texas 12 Bar Blues",
+    "fileName": "6.Texas_12_Bar_Blues.pdf",
+    "dataFile": "texas-12-bar-blues.json",
+    "tempo": 140,
+    "eventCount": 115,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Pentatonic Boxes for Barre Chords",
+    "fileName": "7.-Pentatonic-Boxes_for_Barre_Chords.pdf",
+    "dataFile": "pentatonic-boxes-for-barre-chords.json",
+    "tempo": 80,
+    "eventCount": 68,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Strumming Essentials Level 3",
+    "fileName": "7.-Strumming_Essentials_Level_3.pdf",
+    "dataFile": "strumming-essentials-level-3.json",
+    "tempo": 120,
+    "eventCount": 215,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Slow Delta Blues in A",
+    "fileName": "7.Slow_Delta_Blues_in_A.pdf",
+    "dataFile": "slow-delta-blues-in-a.json",
+    "tempo": 65,
+    "eventCount": 334,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "String Skippin’",
+    "fileName": "7.String_Skippin.pdf",
+    "dataFile": "string-skippin.json",
+    "tempo": 80,
+    "eventCount": 194,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Drop D Fingerpicking Level 2",
+    "fileName": "7._Drop_D_Fingerpicking-Level_2.pdf",
+    "dataFile": "drop-d-fingerpicking-level-2.json",
+    "tempo": 85,
+    "eventCount": 205,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Bluegrass Strummin’ & Pickin’",
+    "fileName": "8-Bluegrass_Strummin_and_Pickin.pdf",
+    "dataFile": "bluegrass-strummin-pickin.json",
+    "tempo": 105,
+    "eventCount": 235,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Catching the Train",
+    "fileName": "8.Catching_the_Train.pdf",
+    "dataFile": "catching-the-train.json",
+    "tempo": 135,
+    "eventCount": 346,
+    "pageCount": 2,
+    "recognition": "text"
+  },
+  {
+    "title": "Percussive Slap",
+    "fileName": "8.Percussive_Slap.pdf",
+    "dataFile": "percussive-slap.json",
+    "tempo": 80,
+    "eventCount": 121,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Texas Blues in E",
+    "fileName": "8.Texas_Blues_in_E.pdf",
+    "dataFile": "texas-blues-in-e.json",
+    "tempo": 130,
+    "eventCount": 105,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "Beach Days",
+    "fileName": "8._Beach_Days.pdf",
+    "dataFile": "beach-days.json",
+    "tempo": 120,
+    "eventCount": 113,
+    "pageCount": 2,
+    "recognition": "outline"
+  },
+  {
+    "title": "Denim Blues",
+    "fileName": "9.Denim_Blues.pdf",
+    "dataFile": "denim-blues.json",
+    "tempo": 65,
+    "eventCount": 177,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Mississippi Slow Blues in E",
+    "fileName": "9.Mississippi_Slow_Blues_in_E.pdf",
+    "dataFile": "mississippi-slow-blues-in-e.json",
+    "tempo": 100,
+    "eventCount": 288,
+    "pageCount": 3,
+    "recognition": "outline"
+  },
+  {
+    "title": "Strummin’ & Pluckin’ (Rhythm Guitar)",
+    "fileName": "9.Strumming_n_Plucking_Rhythm_Guitar.pdf",
+    "dataFile": "strummin-pluckin-rhythm.json",
+    "tempo": 90,
+    "eventCount": 92,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "The Magical Chords",
+    "fileName": "9.The_Magical_Chords.pdf",
+    "dataFile": "the-magical-chords.json",
+    "tempo": 80,
+    "eventCount": 85,
+    "pageCount": 1,
+    "recognition": "text"
+  },
+  {
+    "title": "25 Classic Fingerpicking Patterns",
+    "fileName": "9._25_Classic_Fingerpicking_Patterns.pdf",
+    "dataFile": "classic-fingerpicking-patterns.json",
+    "tempo": 80,
+    "eventCount": 552,
+    "pageCount": 7,
+    "recognition": "text"
+  },
+  {
+    "title": "Open Pentatonic Shapes",
+    "fileName": "Open_Pentatonic_Shapes.pdf",
+    "dataFile": "open-pentatonic-shapes.json",
+    "tempo": 80,
+    "eventCount": 25,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Strumming Essentials Level 1",
+    "fileName": "Strumming_Essentials_Level_1.pdf",
+    "dataFile": "strumming-essentials-level-1.json",
+    "tempo": 120,
+    "eventCount": 87,
+    "pageCount": 1,
+    "recognition": "outline"
+  },
+  {
+    "title": "Lead: Major scales in 3 positions",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-major-scales-in-3-positions.json",
+    "tempo": 90,
+    "eventCount": 100,
+    "pageCount": 3,
+    "recognition": "image",
+    "pageStart": 9,
+    "pageEnd": 11,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Practical theory: Chord degrees",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-practical-theory-chord-degrees.json",
+    "tempo": 90,
+    "eventCount": 27,
+    "pageCount": 3,
+    "recognition": "image",
+    "pageStart": 12,
+    "pageEnd": 14,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Optimistic Jam",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-optimistic-jam.json",
+    "tempo": 85,
+    "eventCount": 130,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 16,
+    "pageEnd": 17,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: Triads",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-triads.json",
+    "tempo": 90,
+    "eventCount": 96,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 22,
+    "pageEnd": 23,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Lead: Pentatonic scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-pentatonic-scales.json",
+    "tempo": 90,
+    "eventCount": 122,
+    "pageCount": 3,
+    "recognition": "text",
+    "pageStart": 24,
+    "pageEnd": 26,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Technique: Bending",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-technique-bending.json",
+    "tempo": 95,
+    "eventCount": 32,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 28,
+    "pageEnd": 29,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Feeling Blue in B Minor",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-feeling-blue-in-b-minor.json",
+    "tempo": 96,
+    "eventCount": 80,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 30,
+    "pageEnd": 31,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: 7th chords",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-7th-chords.json",
+    "tempo": 90,
+    "eventCount": 58,
+    "pageCount": 4,
+    "recognition": "mixed",
+    "pageStart": 34,
+    "pageEnd": 37,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Speed and versatility: Pentatonic scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-speed-and-versatility-pentatonic-scales.json",
+    "tempo": 90,
+    "eventCount": 95,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 38,
+    "pageEnd": 39,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Practical theory: Chord progressions",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-practical-theory-chord-progressions.json",
+    "tempo": 90,
+    "eventCount": 241,
+    "pageCount": 4,
+    "recognition": "text",
+    "pageStart": 40,
+    "pageEnd": 43,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Lead: Minor scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-minor-scales.json",
+    "tempo": 90,
+    "eventCount": 168,
+    "pageCount": 4,
+    "recognition": "text",
+    "pageStart": 44,
+    "pageEnd": 47,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Aeolian Dream",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-aeolian-dream.json",
+    "tempo": 90,
+    "eventCount": 101,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 48,
+    "pageEnd": 49,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: Triads on the top 3 strings",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-triads-on-the-top-3-strings.json",
+    "tempo": 90,
+    "eventCount": 75,
+    "pageCount": 3,
+    "recognition": "image",
+    "pageStart": 52,
+    "pageEnd": 54,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Speed and versatility: Scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-speed-and-versatility-scales.json",
+    "tempo": 90,
+    "eventCount": 131,
+    "pageCount": 3,
+    "recognition": "text",
+    "pageStart": 55,
+    "pageEnd": 57,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Improvisation: How to embellish chords",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-improvisation-how-to-embellish-chords.json",
+    "tempo": 70,
+    "eventCount": 280,
+    "pageCount": 3,
+    "recognition": "text",
+    "pageStart": 58,
+    "pageEnd": 60,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Lead: Harmonic minor scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-harmonic-minor-scales.json",
+    "tempo": 90,
+    "eventCount": 74,
+    "pageCount": 3,
+    "recognition": "text",
+    "pageStart": 61,
+    "pageEnd": 63,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Harmonic Patterns in E Minor",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-harmonic-patterns-in-e-minor.json",
+    "tempo": 78,
+    "eventCount": 272,
+    "pageCount": 3,
+    "recognition": "image",
+    "pageStart": 64,
+    "pageEnd": 66,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Technique: Picking",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-technique-picking.json",
+    "tempo": 90,
+    "eventCount": 31,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 69,
+    "pageEnd": 70,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Technique: Fretting chords",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-technique-fretting-chords.json",
+    "tempo": 90,
+    "eventCount": 53,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 71,
+    "pageEnd": 72,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Lead: Major and minor arpeggios",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-major-and-minor-arpeggios.json",
+    "tempo": 90,
+    "eventCount": 171,
+    "pageCount": 3,
+    "recognition": "text",
+    "pageStart": 73,
+    "pageEnd": 75,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: Dm7, G7",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-dm7-g7.json",
+    "tempo": 90,
+    "eventCount": 72,
+    "pageCount": 3,
+    "recognition": "image",
+    "pageStart": 76,
+    "pageEnd": 78,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Practical theory: Dorian mode",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-practical-theory-dorian-mode.json",
+    "tempo": 90,
+    "eventCount": 42,
+    "pageCount": 4,
+    "recognition": "text",
+    "pageStart": 79,
+    "pageEnd": 82,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Dazzling Dorian Funk!",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-dazzling-dorian-funk.json",
+    "tempo": 95,
+    "eventCount": 245,
+    "pageCount": 3,
+    "recognition": "image",
+    "pageStart": 83,
+    "pageEnd": 85,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Speed and versatility: Diagonal pentatonic scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-speed-and-versatility-diagonal-pentatonic-scales.json",
+    "tempo": 90,
+    "eventCount": 113,
+    "pageCount": 4,
+    "recognition": "image",
+    "pageStart": 89,
+    "pageEnd": 92,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: Embellishments",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-embellishments.json",
+    "tempo": 80,
+    "eventCount": 138,
+    "pageCount": 3,
+    "recognition": "mixed",
+    "pageStart": 93,
+    "pageEnd": 95,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Practical theory: The CAGED system",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-practical-theory-the-caged-system.json",
+    "tempo": 90,
+    "eventCount": 67,
+    "pageCount": 3,
+    "recognition": "text",
+    "pageStart": 96,
+    "pageEnd": 98,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Lead: Target notes",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-target-notes.json",
+    "tempo": 90,
+    "eventCount": 26,
+    "pageCount": 4,
+    "recognition": "text",
+    "pageStart": 99,
+    "pageEnd": 102,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Target Blues in Am",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-target-blues-in-am.json",
+    "tempo": 90,
+    "eventCount": 80,
+    "pageCount": 2,
+    "recognition": "text",
+    "pageStart": 103,
+    "pageEnd": 104,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: Twelve-bar blues",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-twelve-bar-blues.json",
+    "tempo": 90,
+    "eventCount": 330,
+    "pageCount": 4,
+    "recognition": "mixed",
+    "pageStart": 107,
+    "pageEnd": 110,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Lead: Mixolydian scales",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-lead-mixolydian-scales.json",
+    "tempo": 90,
+    "eventCount": 43,
+    "pageCount": 4,
+    "recognition": "text",
+    "pageStart": 111,
+    "pageEnd": 114,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Chords: Extended chords",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-chords-extended-chords.json",
+    "tempo": 90,
+    "eventCount": 76,
+    "pageCount": 5,
+    "recognition": "text",
+    "pageStart": 116,
+    "pageEnd": 120,
+    "sourceKind": "next-level-workbook"
+  },
+  {
+    "title": "Solo: Everything Is Connected",
+    "fileName": "Next_Level_Playing_Workbook.pdf",
+    "dataFile": "next-level-solo-everything-is-connected.json",
+    "tempo": 90,
+    "eventCount": 128,
+    "pageCount": 3,
+    "recognition": "mixed",
+    "pageStart": 121,
+    "pageEnd": 123,
+    "sourceKind": "next-level-workbook"
+  }
+]
